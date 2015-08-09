@@ -1,0 +1,31 @@
+[18:09:45] [main/INFO]: Setting user: Player559
+[18:09:46] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:09:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Gems are Truly Fabulous and Outrageous
+[18:09:52] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: GTFO/ in E:\Projects\Gems\out\production\Gems
+[18:09:52] [Sound Library Loader/INFO]: Sound engine started
+[18:09:53] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:09:53] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:09:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Gems are Truly Fabulous and Outrageous
+[18:09:54] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: GTFO/ in E:\Projects\Gems\out\production\Gems
+[18:09:54] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:09:54] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[18:09:55] [Sound Library Loader/INFO]: Sound engine started
+[18:10:09] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[18:10:09] [Server thread/INFO]: Generating keypair
+[18:10:17] [Server thread/INFO]: Preparing start region for level 0
+[18:10:18] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:10:18] [Server thread/INFO]: Player559[local:E:0df094bb] logged in with entity id 205 at (-82.86152834638511, 5.3779883668014055, -143.71916732848396)
+[18:10:18] [Server thread/INFO]: Player559 joined the game
+[18:10:27] [Server thread/INFO]: [Player559: Given [item.gtfo:gemCitrine.name] * 1 to Player559]
+[18:10:27] [Client thread/INFO]: [CHAT] Given [item.gtfo:gemCitrine.name] * 1 to Player559
+[18:10:37] [Server thread/INFO]: Saving and pausing game...
+[18:10:37] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:10:37] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:10:37] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:10:39] [Client thread/INFO]: Stopping!
+[18:10:39] [Server thread/INFO]: Stopping server
+[18:10:39] [Server thread/INFO]: Saving players
+[18:10:39] [Server thread/INFO]: Saving worlds
+[18:10:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:10:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:10:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End

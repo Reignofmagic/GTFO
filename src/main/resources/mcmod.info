@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "GTFO",
+    "name": "Gems are Truly Fabulous and Outrageous",
+    "description": "A Gem Unification Mod. This also adds more tools and armors in a tiered/gated progression.",
+    "version": "0.1",
+    "mcversion": "${MCversion}",
+    "url": "https://github.com/Reignofmagic/GTFO",
+    "updateUrl": "",
+    "authorList": [
+      "ReignOfMagic",
+      "Dusty"
+          ],
+    "credits": "Thanks to ReikaKaleski, mDiyo, and many other wonderful mod creators who inspired me.",
+    "logoFile": "DS.jpg",
+    "screenshots": [],
+    "parent":"",
+    "dependencies": []
+  }
+]
