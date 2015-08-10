@@ -1,6 +1,8 @@
 package com.ReignOfMagic.gtfo;
 
 import com.ReignOfMagic.gtfo.handler.ConfigurationHandler;
+import com.ReignOfMagic.gtfo.init.GTFOCrafting;
+import com.ReignOfMagic.gtfo.init.ModBlocks;
 import com.ReignOfMagic.gtfo.init.ModItems;
 import com.ReignOfMagic.gtfo.proxy.IProxy;
 import com.ReignOfMagic.gtfo.reference.Reference;
@@ -28,15 +30,18 @@ public class GTFO {
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        LogHelper.info("Pre Initialization Complete");
+
 
         ModItems.init();
+        ModBlocks.init();
 
-
+        LogHelper.info("Pre Initialization Complete");
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        GTFOCrafting.init();
+
         LogHelper.info("Initialization Complete");
     }
     @Mod.EventHandler

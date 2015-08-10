@@ -1,12 +1,15 @@
 package com.ReignOfMagic.gtfo.item;
 
 
-public class ItemGemTopaz extends ItemGTFO
+import com.ReignOfMagic.gtfo.reference.Reference;
+import net.minecraft.item.Item;
+
+public class ItemGemTopaz extends Item
 {
     public ItemGemTopaz()
     {
-        super();
-        this.setUnlocalizedName("gemCitrine");
+
+        setUnlocalizedName(Reference.MOD_ID + "_" + "gemTopaz");
 
 
 

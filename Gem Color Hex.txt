@@ -1,0 +1,3 @@
+Citrine Main: fb9b13
+Citrine Fracture: db8100
+Citrine Outer Edge: be802c
