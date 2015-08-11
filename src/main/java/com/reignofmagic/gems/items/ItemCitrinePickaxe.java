@@ -4,14 +4,15 @@ import com.reignofmagic.gems.helper.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
 
-public class ItemGemCitrine extends Item{
-	public ItemGemCitrine()
+public class ItemCitrinePickaxe extends ItemPickaxe{
+	public ItemCitrinePickaxe(ToolMaterial material)
 	{
-		super();
-		setUnlocalizedName("gemCitrine");
+		super(material);
+		setUnlocalizedName("citrinePickaxe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(CreativeTabs.tabMaterials);
+		setCreativeTab(CreativeTabs.tabTools);
 		
 		
 	

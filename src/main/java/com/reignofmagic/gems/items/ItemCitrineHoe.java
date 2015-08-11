@@ -4,14 +4,16 @@ import com.reignofmagic.gems.helper.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemHoe;
 
-public class ItemGemCitrine extends Item{
-	public ItemGemCitrine()
+
+public class ItemCitrineHoe extends ItemHoe{
+	public ItemCitrineHoe(ToolMaterial material)
 	{
-		super();
-		setUnlocalizedName("gemCitrine");
+		super(material);
+		setUnlocalizedName("citrineHoe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(CreativeTabs.tabMaterials);
+		setCreativeTab(CreativeTabs.tabTools);
 		
 		
 	
