@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
+import com.reignofmagic.gems.items.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,7 +17,7 @@ public class BlockOreCitrine extends Block{
 		super(Material.rock);
 		setBlockName("oreCitrine");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(Gems.GTFOtab);
 		setStepSound(soundTypeStone);
 		setHardness(2.5F);
 		setResistance(5F);
@@ -27,7 +28,7 @@ public class BlockOreCitrine extends Block{
 	@Override
 	public Item getItemDropped(int metadata, Random rand, int fortune)
 	{
-		return Gems.gemCitrine;
+		return ModItems.gemCitrine;
 	}
 
 }

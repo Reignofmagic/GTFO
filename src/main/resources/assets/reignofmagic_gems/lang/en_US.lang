@@ -1,3 +1,4 @@
+itemGroup.GTFOtab=G.T.F.O.
 tile.oreCitrine.name=Citrine Ore
 item.gemCitrine.name=Citrine
 item.citrineShovel.name=Citrine Shovel
@@ -5,4 +6,9 @@ item.citrineHoe.name=Citrine Hoe
 item.citrineSword.name=Citrine Sword
 item.citrineAxe.name=Citrine Axe
 item.citrinePickaxe.name=Citrine Pickaxe
+item.citrineHelmet.name=Citrine Helmet
+item.citrineChest.name=Citrine Chestplate
+item.citrineLegs.name=Citrine Leggings
+item.citrineBoots.name=Citrine Boots
+
 

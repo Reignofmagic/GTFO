@@ -1,5 +1,7 @@
 package com.reignofmagic.gems.items;
 
+import com.reignofmagic.gems.Gems;
+import com.reignofmagic.gems.handler.GTFOtab;
 import com.reignofmagic.gems.helper.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,7 +13,7 @@ public class ItemGemCitrine extends Item{
 		super();
 		setUnlocalizedName("gemCitrine");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(CreativeTabs.tabMaterials);
+		setCreativeTab(Gems.GTFOtab);
 		
 		
 	
