@@ -2,6 +2,8 @@ package com.reignofmagic.gems.handler;
 
 import com.reignofmagic.gems.items.ModItems;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,6 +15,7 @@ public class GTFOtab extends CreativeTabs{
 		
 	}
 	@Override
+	@SideOnly(Side.CLIENT)
 	public Item getTabIconItem(){
 		return ModItems.gemCitrine;
 	}

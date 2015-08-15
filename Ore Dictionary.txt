@@ -1,0 +1,13 @@
+Blue Topaz: gemBlueTopaz
+Blue Topaz Ore: oreBlueTopaz
+Topaz: gemTopaz
+Topaz Ore: oreTopaz
+Sapphire Ore: oreSapphire
+Sapphire: gemSapphire
+Peridot: gemPeridot
+Peridot ore: orePeridot
+ruby: gemRuby
+ruby ore: oreRuby
+Amber
+Tanzanite
+Malachite

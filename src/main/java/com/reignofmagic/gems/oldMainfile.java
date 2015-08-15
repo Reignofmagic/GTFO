@@ -1,4 +1,4 @@
-package com.reignofmagic.gems;
+/*package com.reignofmagic.gems;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -32,10 +32,10 @@ import com.reignofmagic.gems.items.ItemCitrineSword;
 public class Gems
 {
    
-/*   //Ores
-   public static Block oreCitrine; */
+   //Ores
+   public static Block oreCitrine; 
    
-/*   //Gems
+   //Gems
    public static Item gemCitrine;
    
    //Tools
@@ -53,11 +53,11 @@ public class Gems
    public static Item citrineHelmet;
    public static Item citrineChest;
    public static Item citrineLegs;
-   public static Item citrineBoots;*/
+   public static Item citrineBoots;
    
    
    
-/*   //Materials Tool Single Purpose
+   //Materials Tool Single Purpose
    
    public static Item.ToolMaterial gemCITRINE = EnumHelper.addToolMaterial("gemCITRINE", 2, 175, 5F, 1.5F, 16);
    public static Item.ToolMaterial gemTOPAZ = EnumHelper.addToolMaterial("gemTOPAZ", 2, 225, 5.5F, 2F, 14);
@@ -76,7 +76,7 @@ public class Gems
    
    //Armor Material
    public static ArmorMaterial gemCITRINEarmor = EnumHelper.addArmorMaterial("gemCITRINEarmor", 10, new int[]{2, 4, 3, 1}, 16);
-   */
+   
    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -86,20 +86,20 @@ public class Gems
     	ModRecipes.LoadRecipes();
     	
     	
-/*    	//Ores
+    	//Ores
     	oreCitrine = new BlockOreCitrine();
-    	RegisterHelper.registerBlock(oreCitrine);*/
+    	RegisterHelper.registerBlock(oreCitrine);
     	
     	
-/*    	//Gems
+    	//Gems
     	gemCitrine = new ItemGemCitrine();
     	RegisterHelper.registerItem(gemCitrine);
-    	*/
     	
     	
     	
     	
-    /*	//Tools
+    	
+    	//Tools
     	citrinePickaxe = new ItemCitrinePickaxe(gemCITRINE);
     	RegisterHelper.registerItem(citrinePickaxe);
     	
@@ -129,7 +129,7 @@ public class Gems
     	
     	citrineBoots = new ItemCitrineArmor(gemCITRINEarmor, 0, 3).setUnlocalizedName("citrineBoots").setTextureName(Reference.MODID + ":" + "citrineBoots");; 	
     	RegisterHelper.registerItem(citrineBoots);
-    	*/
+    	
     	
     	
     	
@@ -159,3 +159,4 @@ public class Gems
     
     
 }
+*/

@@ -16,7 +16,8 @@ import net.minecraft.creativetab.CreativeTabs;
 
 ;
 
-@Mod(modid = Reference.MODID, version = Reference.VERSION)
+@Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME)
+
 public class Gems
 {
 	public static CreativeTabs GTFOtab = new GTFOtab(CreativeTabs.getNextID(), "GTFOtab");

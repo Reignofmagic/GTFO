@@ -11,4 +11,8 @@ item.citrineChest.name=Citrine Chestplate
 item.citrineLegs.name=Citrine Leggings
 item.citrineBoots.name=Citrine Boots
 
-
+tile.lowtierGems.oreTopaz.name=Topaz Ore
+tile.lowtierGems.orePeridot.name=Peridot Ore
+tile.lowtierGems.oreRuby.name=Ruby Ore
+tile.lowtierGems.oreSapphire.name=Sapphire Ore
+tile.lowtierGems.oreJet.name=Jet Ore
