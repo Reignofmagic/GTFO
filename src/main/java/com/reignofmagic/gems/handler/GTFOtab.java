@@ -17,7 +17,7 @@ public class GTFOtab extends CreativeTabs{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Item getTabIconItem(){
-		return ModItems.gemCitrine;
+		return ModItems.topazPickaxe;
 	}
 }
 	

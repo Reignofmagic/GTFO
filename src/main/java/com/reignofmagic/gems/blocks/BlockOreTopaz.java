@@ -11,11 +11,11 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class BlockOreCitrine extends Block{
-	public BlockOreCitrine()
+public class BlockOreTopaz extends Block{
+	public BlockOreTopaz()
 	{
 		super(Material.rock);
-		setBlockName("oreCitrine");
+		setBlockName("oreTopaz");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		setStepSound(soundTypeStone);
@@ -25,10 +25,10 @@ public class BlockOreCitrine extends Block{
 		
 	}
 	
-	@Override
+/*	@Override
 	public Item getItemDropped(int metadata, Random rand, int fortune)
 	{
-		return ModItems.gemCitrine;
-	}
+		return ModItems.gemTopaz;
+	}*/
 
 }

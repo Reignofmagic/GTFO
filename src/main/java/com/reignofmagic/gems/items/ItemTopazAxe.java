@@ -7,11 +7,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 
-public class ItemCitrineAxe extends ItemAxe{
-	public ItemCitrineAxe(ToolMaterial material)
+public class ItemTopazAxe extends ItemAxe{
+	public ItemTopazAxe(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("citrineAxe");
+		setUnlocalizedName("topazAxe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

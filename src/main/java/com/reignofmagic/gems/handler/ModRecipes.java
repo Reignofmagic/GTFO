@@ -11,73 +11,78 @@ public class ModRecipes {
 	public static void LoadRecipes() 
 	{
 		//Citrine Tools 
-		GameRegistry.addRecipe(new ItemStack(ModItems.citrinePickaxe),
+		GameRegistry.addRecipe(new ItemStack(ModItems.topazPickaxe),
                   "XXX",
                   " P ",
                   " S ",
-                  'X',ModItems.gemCitrine, 'P', Items.stone_pickaxe, 'S', Items.stick
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0), 'P', Items.stone_pickaxe, 'S', Items.stick
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineAxe),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazAxe),
                   "XX ",
                   "XP ",
                   " S ",
-                  'X',ModItems.gemCitrine, 'P', Items.stone_axe, 'S', Items.stick
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0), 'P', Items.stone_axe, 'S', Items.stick
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineHoe),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazHoe),
                   "XX ",
                   " P ",
                   " S ",
-                  'X',ModItems.gemCitrine, 'P', Items.stone_hoe, 'S', Items.stick
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0), 'P', Items.stone_hoe, 'S', Items.stick
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineSword),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazSword),
                   " X ",
                   " X ",
                   " P ",
-                  'X',ModItems.gemCitrine, 'P', Items.stone_sword
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0), 'P', Items.stone_sword
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineShovel),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazShovel),
                   " X ",
                   " P ",
                   " S ",
-                  'X',ModItems.gemCitrine, 'P', Items.stone_shovel, 'S', Items.stick
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0), 'P', Items.stone_shovel, 'S', Items.stick
           );
 		  
 		  //Citrine Armor
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineHelmet),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazHelmet),
                   "XXX",
                   "X X",
-                  'X',ModItems.gemCitrine
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0)
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineChest),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazChest),
                   "X X",
                   "XXX",
                   "XXX",
-                  'X',ModItems.gemCitrine
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0)
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineLegs),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazLegs),
                   "XXX",
                   "X X",
                   "X X",
-                  'X',ModItems.gemCitrine
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0)
           );
 		  
-		  GameRegistry.addRecipe(new ItemStack(ModItems.citrineBoots),
+		  GameRegistry.addRecipe(new ItemStack(ModItems.topazBoots),
                   "X X",
                   "X X",
-                  'X',ModItems.gemCitrine
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 0)
           );
 		  
 		
+		//Malachite Tools
+		  GameRegistry.addRecipe(new ItemStack(ModItems.malachitePickaxe),
+                  "XXX",
+                  " P ",
+                  " S ",
+                  'X',new ItemStack(ModItems.PreDiamondgemstones, 1), 'P', Items.stone_pickaxe, 'S', Items.stick
 		
-		
-		  
+				   );
 		
 	}
 	

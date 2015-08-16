@@ -5,13 +5,13 @@ import com.reignofmagic.gems.helper.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSword;
 
-public class ItemCitrinePickaxe extends ItemPickaxe{
-	public ItemCitrinePickaxe(ToolMaterial material)
+public class ItemTopazSword extends ItemSword{
+	public ItemTopazSword(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("citrinePickaxe");
+		setUnlocalizedName("topazSword");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

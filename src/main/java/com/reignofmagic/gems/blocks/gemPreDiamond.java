@@ -22,34 +22,35 @@ public class gemPreDiamond extends Block{
 	String name = "LowGem";
 	
 	@SideOnly(Side.CLIENT)
-	private IIcon[] icons;
+	public IIcon[] icons = new IIcon[3];
 	
 	
 	public gemPreDiamond()
 	{
 		super(Material.rock);
-		setBlockName(Reference.MODID + "_" + name);
+		setBlockName(Reference.MODID + ".ore");
 		setStepSound(soundTypeStone);
-		setHardness(2.5F);
+		setHardness(4F);
 		setResistance(5F);
+		setCreativeTab(Gems.GTFOtab);
 		setHarvestLevel("pickaxe", 2);
 	}	
 	
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerBlockIcons(IIconRegister par1IconRegister)
-	{
-		icons = new IIcon(2);
-		for (int i =0; i < icons.length; i++)
-		{
-			icons(i) = par1IconRegister.registerIcon(Reference.MODID + ":" + "lowgems" + i);
-		}
+	  public void registerBlockIcons(IIconRegister iconRegister) {
+	
+		
+        this.icons[0] = iconRegister.registerIcon(Reference.MODID + ":" + "oreMalachite");
+        this.icons[1] = iconRegister.registerIcon(Reference.MODID + ":" + "oreAmber");
+        this.icons[2] = iconRegister.registerIcon(Reference.MODID + ":" + "oreTanzanite");
+        
 	}
-		@Override
-		@SideOnly(Side.CLIENT)
-		public IIcon getIcon(int par1, int par2){
-			return icons(par2);
-		}
+	@Override
+    @SideOnly(Side.CLIENT)
+    	public IIcon getIcon(int side, int meta) {
+        return this.icons[meta];
+    }
 		
 		
 		@SuppressWarnings({"unchecked", "rawtypes"})
@@ -57,18 +58,26 @@ public class gemPreDiamond extends Block{
 		@Override
 				public void getSubBlocks(Item par1, CreativeTabs par2CreativeTabs, List par3List)
 				{
-			for (int var4 = 0; var4 < 2; ++var4)
+			for (int var4 = 0; var4 < 3; ++var4)
 			{
 				par3List.add(new ItemStack(par1, 1, var4));
 			}
 				}
+}
+
 		
 
-	
-	@Override
-	public Item getItemDropped(int metadata, Random rand, int fortune)
-	{
-		return ModItems.gemCitrine;
-	}
+	/*
+		 @Override
+		 public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
+		    {
+		        return BlocksItems.Mineral;
+		    }
+			
+			public int damageDropped(int par1, Random par2Random, int par3){
+
+				return 0;
+			}
 
 }
+*/

@@ -7,11 +7,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 
-public class ItemCitrineShovel extends ItemSpade{
-	public ItemCitrineShovel(ToolMaterial material)
+public class ItemTopazShovel extends ItemSpade{
+	public ItemTopazShovel(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("citrineShovel");
+		setUnlocalizedName("topazShovel");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

@@ -1,33 +1,44 @@
 package com.reignofmagic.gems.items;
 
+import com.reignofmagic.gems.blocks.ItemgemPreDiamond;
+import com.reignofmagic.gems.blocks.gemPreDiamond;
 import com.reignofmagic.gems.helper.Reference;
 import com.reignofmagic.gems.helper.RegisterHelper;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
 	
-	   //Gems
+	   /*Gems Now unused due to Metadata
 	   public static Item gemCitrine;
+	  */
 	   
+	   //Gems Metadata 1
+	   public static Item PreDiamondgemstones;
+	   
+	   
+	  	   
 	   //Tools
-	   public static Item citrinePickaxe;
+	   public static Item topazPickaxe;
 	   
-	   public static Item citrineAxe;
+	   public static Item topazAxe;
 	   
-	   public static Item citrineHoe;
+	   public static Item topazHoe;
 	   
-	   public static Item citrineShovel;
+	   public static Item topazShovel;
 	   
-	   public static Item citrineSword;
+	   public static Item topazSword;
+	   
+	   public static Item malachitePickaxe;
 	   
 	   //Armor
-	   public static Item citrineHelmet;
-	   public static Item citrineChest;
-	   public static Item citrineLegs;
-	   public static Item citrineBoots;
+	   public static Item topazHelmet;
+	   public static Item topazChest;
+	   public static Item topazLegs;
+	   public static Item topazBoots;
 	   //Materials Tool Single Purpose
 	   
 	   public static Item.ToolMaterial gemCITRINE = EnumHelper.addToolMaterial("gemCITRINE", 2, 175, 5F, 1.5F, 16);
@@ -51,40 +62,52 @@ public class ModItems {
 	
 	public static void LoadItems()
 	{
-		//Gems
+		/*Gems now unused due to metadata
     	gemCitrine = new ItemGemCitrine();
-    	RegisterHelper.registerItem(gemCitrine);
-    	 		
+    	RegisterHelper.registerItem(gemCitrine);*/
+    	
+    	
+    	//Gems metadata 1
+    	PreDiamondgemstones = new ItemGemstones();
+    	GameRegistry.registerItem(PreDiamondgemstones, "LowGemstones");
+    
+    	
+    	
+    	
+    	
     	//Tools
-    	citrinePickaxe = new ItemCitrinePickaxe(gemCITRINE);
-    	RegisterHelper.registerItem(citrinePickaxe);
+    	topazPickaxe = new ItemTopazPickaxe(gemCITRINE);
+    	RegisterHelper.registerItem(topazPickaxe);
     	
-    	citrineAxe = new ItemCitrineAxe(gemCITRINE);
-    	RegisterHelper.registerItem(citrineAxe);
+    	topazAxe = new ItemTopazAxe(gemCITRINE);
+    	RegisterHelper.registerItem(topazAxe);
     	
-    	citrineShovel = new ItemCitrineShovel(gemCITRINE);
-    	RegisterHelper.registerItem(citrineShovel);
+    	topazShovel = new ItemTopazShovel(gemCITRINE);
+    	RegisterHelper.registerItem(topazShovel);
     	
-    	citrineHoe = new ItemCitrineHoe(gemCITRINE);
-    	RegisterHelper.registerItem(citrineHoe);
+    	topazHoe = new ItemTopazHoe(gemCITRINE);
+    	RegisterHelper.registerItem(topazHoe);
     	
-    	citrineSword = new ItemCitrineSword(gemCITRINE);
-    	RegisterHelper.registerItem(citrineSword);
+    	topazSword = new ItemTopazSword(gemCITRINE);
+    	RegisterHelper.registerItem(topazSword);
+    	
+    	malachitePickaxe = new ItemMalachitePickaxe(gemTOPAZ);
+    	RegisterHelper.registerItem(malachitePickaxe);
     	
     	
     	// Armor
     	
-    	citrineHelmet = new ItemCitrineArmor(gemCITRINEarmor, 0, 0).setUnlocalizedName("citrineHelmet").setTextureName(Reference.MODID + ":" + "citrineHelmet"); 	
-    	RegisterHelper.registerItem(citrineHelmet);
+    	topazHelmet = new ItemTopazArmor(gemCITRINEarmor, 0, 0).setUnlocalizedName("topazHelmet").setTextureName(Reference.MODID + ":" + "topazHelmet"); 	
+    	RegisterHelper.registerItem(topazHelmet);
     	
-    	citrineChest = new ItemCitrineArmor(gemCITRINEarmor, 0, 1).setUnlocalizedName("citrineChest").setTextureName(Reference.MODID + ":" + "citrineChest");	
-    	RegisterHelper.registerItem(citrineChest);
+    	topazChest = new ItemTopazArmor(gemCITRINEarmor, 0, 1).setUnlocalizedName("topazChest").setTextureName(Reference.MODID + ":" + "topazChest");	
+    	RegisterHelper.registerItem(topazChest);
     	
-    	citrineLegs = new ItemCitrineArmor(gemCITRINEarmor, 0, 2).setUnlocalizedName("citrineLegs").setTextureName(Reference.MODID + ":" + "citrineLegs"); 	
-    	RegisterHelper.registerItem(citrineLegs);
+    	topazLegs = new ItemTopazArmor(gemCITRINEarmor, 0, 2).setUnlocalizedName("topazLegs").setTextureName(Reference.MODID + ":" + "topazLegs"); 	
+    	RegisterHelper.registerItem(topazLegs);
     	
-    	citrineBoots = new ItemCitrineArmor(gemCITRINEarmor, 0, 3).setUnlocalizedName("citrineBoots").setTextureName(Reference.MODID + ":" + "citrineBoots");; 	
-    	RegisterHelper.registerItem(citrineBoots);
+    	topazBoots = new ItemTopazArmor(gemCITRINEarmor, 0, 3).setUnlocalizedName("topazBoots").setTextureName(Reference.MODID + ":" + "topazBoots");; 	
+    	RegisterHelper.registerItem(topazBoots);
 	}
 
 }
