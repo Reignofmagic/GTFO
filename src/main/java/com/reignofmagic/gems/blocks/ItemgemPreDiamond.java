@@ -22,4 +22,5 @@ public class ItemgemPreDiamond extends ItemBlock{
     public int getMetadata(int meta) {
         return meta;
     }
+    
 }

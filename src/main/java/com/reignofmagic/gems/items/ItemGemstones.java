@@ -37,6 +37,7 @@ public class ItemGemstones extends Item{
 		
 		setCreativeTab(Gems.GTFOtab);
 		
+		setHasSubtypes(true);
 	}	
 	
 	 @Override
@@ -44,7 +45,10 @@ public class ItemGemstones extends Item{
 	 {
 		 return getUnlocalizedName() + "." + names[stack.getItemDamage() % names.length];
 	    }
-	 
+	 @Override
+	    public int getMetadata(int meta) {
+	        return meta;
+	 }
 	 
 	 
 	 //Texture Override
@@ -81,6 +85,7 @@ public class ItemGemstones extends Item{
 			}
 				}
 }
+
 
 		
 
