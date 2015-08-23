@@ -73,18 +73,18 @@ public class ModRecipes {
 		  GameRegistry.addRecipe(new ItemStack(ModItems.topazBoots),
                   "X X",
                   "X X",
-                  'X',new ItemStack(ModItems.Gemstones, 0)
+                  'X',new ItemStack(ModItems.Gemstones, 1)
           );
 		  
 		
 		//Malachite Tools
-		  GameRegistry.addRecipe(new ItemStack(ModItems.malachitePickaxe),
+		/*  GameRegistry.addRecipe(new ItemStack(ModItems.malachitePickaxe),
                   "XXX",
                   " P ",
                   " S ",
                   'X',new ItemStack(ModItems.Gemstones, 1), 'P', Items.stone_pickaxe, 'S', Items.stick
 		
-				   );
+				   );*/
 		 
 		  CraftingManager
 		  	.getInstance()
@@ -96,6 +96,13 @@ public class ModRecipes {
 				  'X', "gemMalachite", 'P', Items.stone_axe, 'S', Items.stick)
 				  );
 
+		  GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachitePickaxe),
+                  "XXX",
+                  " P ",
+                  " S ",
+                  'X', "blockGold", 'P', Items.stone_pickaxe, 'S', "stickWood"
+		
+				   ));
 		
 	}
 	

@@ -8,14 +8,17 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class Dictionary {
 
-	  public static void oreDictionary(){
+	public static final int WILDCARD_VALUE = Short.MAX_VALUE;
+	  
+	public static void oreDictionary()
+	  {
 		  
 		  //Ores
 		  OreDictionary.registerOre("oreTopaz", new ItemStack(ModBlocks.oreTopaz));
 		  OreDictionary.registerOre("oreMalachite", new ItemStack(ModBlocks.gemPreDiamond,0));
 		  //Gems
 		  
-		  OreDictionary.registerOre("gemMalachite", new ItemStack(ModItems.Gemstones, 1));
-		  
+		  //OreDictionary.registerOre("gemMalachite", new ItemStack(ModItems.Gemstones, 1));
+		  OreDictionary.registerOre("gemMalachite", new ItemStack(ModItems.Gemstones, 1, WILDCARD_VALUE));
 	  }
 }

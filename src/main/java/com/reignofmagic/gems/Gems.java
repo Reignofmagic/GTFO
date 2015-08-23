@@ -1,6 +1,7 @@
 package com.reignofmagic.gems;
 
 import com.reignofmagic.gems.blocks.ModBlocks;
+import com.reignofmagic.gems.handler.Dictionary;
 import com.reignofmagic.gems.handler.GTFOtab;
 import com.reignofmagic.gems.handler.ModRecipes;
 import com.reignofmagic.gems.handler.ReignEventHandler;
@@ -14,6 +15,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 
 ;
@@ -41,19 +44,18 @@ public class Gems
       		
       	}
     	
-    public static void oreDictionary(){	
-    	
-    }
+
     
     
     public void init(FMLInitializationEvent event)
     {
-   
+   Dictionary.oreDictionary();
     }
     
     public void init(FMLPostInitializationEvent event)
     {
-		
+    
+
     }
     
     
