@@ -11,7 +11,7 @@ public class ItemMalachitePickaxe extends ItemPickaxe{
 	public ItemMalachitePickaxe(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("malachitePickaxe");
+		setUnlocalizedName(Reference.MODID + "_" + "malachitePickaxe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

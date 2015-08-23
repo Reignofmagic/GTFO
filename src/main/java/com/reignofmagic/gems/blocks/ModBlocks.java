@@ -11,6 +11,8 @@ public class ModBlocks
 	   public static Block oreTopaz; 
 	   
 	   public static Block gemPreDiamond;
+	   
+	   public static Block gemPostDiamond;
 /*	   
  *  attempt
  * public static Block lowtierGems;
@@ -25,6 +27,9 @@ public static void loadBlocks()
 	
 	gemPreDiamond = new gemPreDiamond();
 	GameRegistry.registerBlock(gemPreDiamond,  ItemgemPreDiamond.class, "LowGems");
+	
+	gemPostDiamond = new gemPostDiamond();
+	GameRegistry.registerBlock(gemPostDiamond,  ItemgemPostDiamond.class, "HighGems");
 	
 	
 	}

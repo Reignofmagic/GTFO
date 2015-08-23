@@ -11,7 +11,7 @@ public class ItemTopazSword extends ItemSword{
 	public ItemTopazSword(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("topazSword");
+		setUnlocalizedName(Reference.MODID + "_" + "topazSword");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

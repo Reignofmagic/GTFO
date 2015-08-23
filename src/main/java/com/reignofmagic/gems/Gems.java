@@ -38,7 +38,10 @@ public class Gems
     	
 
       	
+      		
+      	}
     	
+    public static void oreDictionary(){	
     	
     }
     

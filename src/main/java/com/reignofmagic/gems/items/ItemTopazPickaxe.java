@@ -11,7 +11,7 @@ public class ItemTopazPickaxe extends ItemPickaxe{
 	public ItemTopazPickaxe(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("topazPickaxe");
+		setUnlocalizedName(Reference.MODID + "_" + "topazPickaxe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

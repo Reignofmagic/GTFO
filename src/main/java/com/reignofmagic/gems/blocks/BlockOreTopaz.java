@@ -21,7 +21,7 @@ public class BlockOreTopaz extends Block{
 	public BlockOreTopaz()
 	{
 		super(Material.rock);
-		setBlockName("oreTopaz");
+		setBlockName(Reference.MODID + "_" + "oreTopaz");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		setStepSound(soundTypeStone);
@@ -37,7 +37,7 @@ public class BlockOreTopaz extends Block{
  
  @Override
  public Item getItemDropped(int damage, Random random, int fortune) {
-        return ModItems.PreDiamondgemstones;
+        return ModItems.Gemstones;
     }
 
     public int quantityDroppedWithBonus(int fortune, Random random) {

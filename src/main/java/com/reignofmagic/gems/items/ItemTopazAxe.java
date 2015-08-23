@@ -11,7 +11,7 @@ public class ItemTopazAxe extends ItemAxe{
 	public ItemTopazAxe(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("topazAxe");
+		setUnlocalizedName(Reference.MODID + "_" + "topazAxe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

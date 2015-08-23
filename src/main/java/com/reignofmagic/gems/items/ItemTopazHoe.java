@@ -12,7 +12,7 @@ public class ItemTopazHoe extends ItemHoe{
 	public ItemTopazHoe(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("topazHoe");
+		setUnlocalizedName(Reference.MODID + "_" + "topazHoe");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

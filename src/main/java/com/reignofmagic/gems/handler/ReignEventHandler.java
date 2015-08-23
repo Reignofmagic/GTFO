@@ -39,6 +39,11 @@ private void generateSurface(World world, Random random, int x, int z)
 	addOreSpawn(ModBlocks.gemPreDiamond, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
 	addOreSpawn(ModBlocks.gemPreDiamond, 1, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
 	addOreSpawn(ModBlocks.gemPreDiamond, 2, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
+	addOreSpawn(ModBlocks.gemPostDiamond, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
+	addOreSpawn(ModBlocks.gemPostDiamond, 1, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
+	addOreSpawn(ModBlocks.gemPostDiamond, 2, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
+	addOreSpawn(ModBlocks.gemPostDiamond, 3, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
+	addOreSpawn(ModBlocks.gemPostDiamond, 4, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(5), 32, 20, 60);
 	
 	
 	

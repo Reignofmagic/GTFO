@@ -11,7 +11,7 @@ public class ItemTopazShovel extends ItemSpade{
 	public ItemTopazShovel(ToolMaterial material)
 	{
 		super(material);
-		setUnlocalizedName("topazShovel");
+		setUnlocalizedName(Reference.MODID + "_" + "topazShovel");
 		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 		

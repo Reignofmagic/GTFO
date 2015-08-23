@@ -81,7 +81,7 @@ public class gemPreDiamond extends Block{
 		 
 		 @Override
 		 public Item getItemDropped(int damage, Random random, int fortune) {
-		        return ModItems.PreDiamondgemstones;
+		        return ModItems.Gemstones;
 		    }
 
 		    public int quantityDroppedWithBonus(int fortune, Random random) {
