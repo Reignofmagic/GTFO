@@ -18,45 +18,29 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-
 ;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME)
 
-public class Gems
-{
+public class Gems {
 	public static CreativeTabs GTFOtab = new GTFOtab(CreativeTabs.getNextID(), "GTFOtab");
-   ReignEventHandler handler = new
-		   ReignEventHandler();
-   
+	ReignEventHandler handler = new ReignEventHandler();
 
-   
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-    	ModBlocks.loadBlocks();
-    	ModItems.LoadItems();
-    	ModRecipes.LoadRecipes();
-    	GameRegistry.registerWorldGenerator(handler,  0);
-    	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		ModBlocks.loadBlocks();
+		ModItems.LoadItems();
+		ModRecipes.LoadRecipes();
+		GameRegistry.registerWorldGenerator(handler, 0);
 
-      	
-      		
-      	}
-    	
+	}
 
-    
-    
-    public void init(FMLInitializationEvent event)
-    {
-   Dictionary.oreDictionary();
-    }
-    
-    public void init(FMLPostInitializationEvent event)
-    {
-    
+	public void init(FMLInitializationEvent event) {
+		Dictionary.oreDictionary();
+	}
 
-    }
-    
-    
+	public void init(FMLPostInitializationEvent event) {
+
+	}
+
 }
