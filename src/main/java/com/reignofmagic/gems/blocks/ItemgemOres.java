@@ -30,8 +30,4 @@ public class ItemgemOres extends ItemBlock {
 
 	}
 
-	public ItemStack damageDropped(ItemStack meta) {
-		return meta;
-
-	}
 }

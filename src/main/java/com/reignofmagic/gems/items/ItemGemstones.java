@@ -19,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemGemstones extends Item {
 //                    0             1              2           3                4              5           6          7              8
@@ -64,6 +65,7 @@ String[] names = {"gemTopaz", "gemMalachite", "gemAmber", "gemTanzanite", "gemPe
 			par3List.add(new ItemStack(par1, 1, var4));
 		}
 		
+	
 	}
 	
 

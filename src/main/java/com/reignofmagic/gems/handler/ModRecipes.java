@@ -58,11 +58,16 @@ public class ModRecipes {
 		 * " S ", 'X', "gemMalachite", 'P', Items.stone_axe, 'S', Items.stick));
 		 */
 
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachitePickaxe), "XXX", " P ", " S ", 'X',
-				"gemMalachite", 'P', Items.stone_pickaxe, 'S', "stickWood"));
+	/*	GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachitePickaxe), "XXX", " P ", " S ", 'X',
+				"gemMalachite", 'P', Items.stone_pickaxe, 'S', "stickWood"));*/
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachitePickaxe), " X ", " X ", " X ", 'X',
+				"gemTopaz", 'P', Items.stone_pickaxe, 'S', "stickWood"));
 
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.malachiteAxe), "XX ", "XP ", " S ", 'X',
 				new ItemStack(ModItems.Gemstones, 1, 1), 'P', Items.stone_axe, 'S', Items.stick);
+		
+	
 
 	}
 

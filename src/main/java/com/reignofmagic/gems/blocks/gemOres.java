@@ -118,8 +118,13 @@ public class gemOres extends Block {
 		return ret;
 	}
 
-	public ItemStack damageDropped(ItemStack meta) {
-		return meta;
+	@Override
+	public int damageDropped(int meta) {
+	    return meta;
+	}
+	@Override public Item getItemDropped(int metadata, Random rand, int fortune)
+	{
+		return ModItems.Gemstones;
 	}
 
 }
