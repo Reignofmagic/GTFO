@@ -101,31 +101,71 @@ public class ModItems {
 	public static Item topazBoots;
 
 	// Malachite
-
+	public static Item malachiteHelmet;
+	public static Item malachiteChest;
+	public static Item malachiteLegs;
+	public static Item malachiteBoots;
 	// Quartz
-
+	public static Item quartzHelmet;
+	public static Item quartzChest;
+	public static Item quartzLegs;
+	public static Item quartzBoots;
 	// Amber
-
+	public static Item amberHelmet;
+	public static Item amberChest;
+	public static Item amberLegs;
+	public static Item amberBoots;
 	// Tanzanite
-
+	public static Item tanzaniteHelmet;
+	public static Item tanzaniteChest;
+	public static Item tanzaniteLegs;
+	public static Item tanzaniteBoots;
 	// Peridot
-
+	public static Item peridotHelmet;
+	public static Item peridotChest;
+	public static Item peridotLegs;
+	public static Item peridotBoots;
+	
 	// Sapphire
-
+	public static Item sapphireHelmet;
+	public static Item sapphireChest;
+	public static Item sapphireLegs;
+	public static Item sapphireBoots;
+	
 	// Ruby
-
+	public static Item rubyHelmet;
+	public static Item rubyChest;
+	public static Item rubyLegs;
+	public static Item rubyBoots;
+	
 	// Emerald
-
+	public static Item emeraldHelmet;
+	public static Item emeraldChest;
+	public static Item emeraldLegs;
+	public static Item emeraldBoots;
+	
 	// Amethyst
-
+	public static Item amethystHelmet;
+	public static Item amethystChest;
+	public static Item amethystLegs;
+	public static Item amethystBoots;
+	
 	// Jet
-
+	public static Item jetHelmet;
+	public static Item jetChest;
+	public static Item jetLegs;
+	public static Item jetBoots;
+	
+	
+	//TestTool
+	public static Item testTool;
+	
 	// Material Tool Single Purpose
 
 	public static Item.ToolMaterial gemTOPAZ = EnumHelper.addToolMaterial("gemTOPAZ", 2, 170, 5F, 1.5F, 16);
 	public static Item.ToolMaterial gemMALACHITE = EnumHelper.addToolMaterial("gemMALACHITE", 2, 210, 5.5F, 1.75F, 15);
 	public static Item.ToolMaterial gemQUARTZ = EnumHelper.addToolMaterial("gemQUARTZ", 2, 265, 6.5F, 2.25F, 14);
-	public static Item.ToolMaterial gemAMBER = EnumHelper.addToolMaterial("gemAMBER", 2, 625, 7F, 2.5F, 32);
+	public static Item.ToolMaterial gemAMBER = EnumHelper.addToolMaterial("gemAMBER", 2, 625, 7F, 2.5F, 12);
 	public static Item.ToolMaterial gemTANZANITE = EnumHelper.addToolMaterial("gemTANZANITE", 2, 1075, 7.5F, 2.75F, 12);
 	public static Item.ToolMaterial gemDIAMOND = EnumHelper.addToolMaterial("gemDIMAOND", 3, 1563, 8F, 3F, 10);
 	public static Item.ToolMaterial gemPERIDOT = EnumHelper.addToolMaterial("gemPERIDOT", 3, 1874, 10F, 5F, 12);
@@ -138,11 +178,36 @@ public class ModItems {
 	// Multiple Tool Material
 
 	public static Item.ToolMaterial gemTOPAZPoel = EnumHelper.addToolMaterial("gemTOPAZPoel", 2, 675, 50F, 1.5F, 16);
+	
+	
+	//Simply testing multi-tools
+	public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 675, 50F, 1.5F, 16);
 
 	// Armor Material
 
 	public static ArmorMaterial gemTOPAZarmor = EnumHelper.addArmorMaterial("gemTOPAZarmor", 10,
-			new int[] { 2, 4, 3, 1 }, 16);
+			new int[] {2, 4, 3, 1 }, 16);
+	public static ArmorMaterial gemMALACHITEarmor = EnumHelper.addArmorMaterial("gemMALACHITEarmor", 13,
+			new int[] {2, 5, 4, 1 }, 15);
+	public static ArmorMaterial gemQUARTZarmor = EnumHelper.addArmorMaterial("gemQUARTZarmor", 15,
+			new int[] {2, 6, 5, 2 }, 14);
+	public static ArmorMaterial gemAMBERarmor = EnumHelper.addArmorMaterial("gemAMBERarmor", 20,
+			new int[] {3, 6, 6, 2 }, 12);
+	public static ArmorMaterial gemTANZANITEarmor = EnumHelper.addArmorMaterial("gemTANZANITEarmor", 28,
+			new int[] {3, 7, 6, 3}, 12);
+	public static ArmorMaterial gemPERIDOTarmor = EnumHelper.addArmorMaterial("gemPERIDOTarmor", 35,
+			new int[] {3, 9, 7, 3}, 12);
+	public static ArmorMaterial gemSAPPHIREarmor = EnumHelper.addArmorMaterial("gemSAPPHIREarmor", 45,
+			new int[] {4, 9, 8, 4}, 12);
+	public static ArmorMaterial gemRUBYarmor = EnumHelper.addArmorMaterial("gemRUBYarmor", 55,
+			new int[] {3, 9, 7, 3}, 12);
+	public static ArmorMaterial gemEMERALDarmor = EnumHelper.addArmorMaterial("gemEMERALDarmor", 66,
+			new int[] {3, 9, 7, 3}, 12);
+	public static ArmorMaterial gemAMETHYSTarmor = EnumHelper.addArmorMaterial("gemAMETHYSTarmor", 99,
+			new int[] {3, 9, 7, 3}, 12);
+	public static ArmorMaterial gemJETarmor = EnumHelper.addArmorMaterial("gemJETarmor", 150,
+			new int[] {3, 9, 7, 3}, 12);
+	
 
 	public static void LoadItems() {
 
@@ -152,6 +217,9 @@ public class ModItems {
 
 		// Tools Section
 
+		testTool = new ItemToolTest(testToolMat);
+		RegisterHelper.registerItem(testTool);
+		
 		// Topaz
 		topazPickaxe = new ItemTopazPickaxe(gemTOPAZ);
 		RegisterHelper.registerItem(topazPickaxe);
@@ -287,40 +355,158 @@ public class ModItems {
 		// Armor Section
 
 		// Topaz
-		topazHelmet = new ItemTopazArmor(gemTOPAZarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "topazHelmet")
+		topazHelmet = new ItemAllGemArmorTextures(gemTOPAZarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "topazHelmet")
 				.setTextureName(Reference.MODID + ":" + "topazHelmet");
 		RegisterHelper.registerItem(topazHelmet);
-		topazChest = new ItemTopazArmor(gemTOPAZarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "topazChest")
+		topazChest = new ItemAllGemArmorTextures(gemTOPAZarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "topazChest")
 				.setTextureName(Reference.MODID + ":" + "topazChest");
 		RegisterHelper.registerItem(topazChest);
-		topazLegs = new ItemTopazArmor(gemTOPAZarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "topazLegs")
+		topazLegs = new ItemAllGemArmorTextures(gemTOPAZarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "topazLegs")
 				.setTextureName(Reference.MODID + ":" + "topazLegs");
 		RegisterHelper.registerItem(topazLegs);
-		topazBoots = new ItemTopazArmor(gemTOPAZarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "topazBoots")
+		topazBoots = new ItemAllGemArmorTextures(gemTOPAZarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "topazBoots")
 				.setTextureName(Reference.MODID + ":" + "topazBoots");
-		;
 		RegisterHelper.registerItem(topazBoots);
 
 		// Malachite
+		malachiteHelmet = new ItemAllGemArmorTextures(gemMALACHITEarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "malachiteHelmet")
+				.setTextureName(Reference.MODID + ":" + "malachiteHelmet");
+		RegisterHelper.registerItem(malachiteHelmet);
+		malachiteChest = new ItemAllGemArmorTextures(gemMALACHITEarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "malachiteChest")
+				.setTextureName(Reference.MODID + ":" + "malachiteChest");
+		RegisterHelper.registerItem(malachiteChest);
+		malachiteLegs = new ItemAllGemArmorTextures(gemMALACHITEarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "malachiteLegs")
+				.setTextureName(Reference.MODID + ":" + "malachiteLegs");
+		RegisterHelper.registerItem(malachiteLegs);
+		malachiteBoots = new ItemAllGemArmorTextures(gemMALACHITEarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "malachiteBoots")
+				.setTextureName(Reference.MODID + ":" + "malachiteBoots");
+		RegisterHelper.registerItem(malachiteBoots);
 
 		// Quartz
-
+		quartzHelmet = new ItemAllGemArmorTextures(gemQUARTZarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "quartzHelmet")
+				.setTextureName(Reference.MODID + ":" + "quartzHelmet");
+		RegisterHelper.registerItem(quartzHelmet);
+		quartzChest = new ItemAllGemArmorTextures(gemQUARTZarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "quartzChest")
+				.setTextureName(Reference.MODID + ":" + "quartzChest");
+		RegisterHelper.registerItem(quartzChest);
+		quartzLegs = new ItemAllGemArmorTextures(gemQUARTZarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "quartzLegs")
+				.setTextureName(Reference.MODID + ":" + "quartzLegs");
+		RegisterHelper.registerItem(quartzLegs);
+		quartzBoots = new ItemAllGemArmorTextures(gemQUARTZarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "quartzBoots")
+				.setTextureName(Reference.MODID + ":" + "quartzBoots");
+		RegisterHelper.registerItem(quartzBoots);
+		
 		// Amber
-
+		amberHelmet = new ItemAllGemArmorTextures(gemAMBERarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "amberHelmet")
+				.setTextureName(Reference.MODID + ":" + "amberHelmet");
+		RegisterHelper.registerItem(amberHelmet);
+		amberChest = new ItemAllGemArmorTextures(gemAMBERarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "amberChest")
+				.setTextureName(Reference.MODID + ":" + "amberChest");
+		RegisterHelper.registerItem(amberChest);
+		amberLegs = new ItemAllGemArmorTextures(gemAMBERarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "amberLegs")
+				.setTextureName(Reference.MODID + ":" + "amberLegs");
+		RegisterHelper.registerItem(amberLegs);
+		amberBoots = new ItemAllGemArmorTextures(gemAMBERarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "amberBoots")
+				.setTextureName(Reference.MODID + ":" + "amberBoots");
+		RegisterHelper.registerItem(amberBoots);
+		
 		// Tanzanite
-
+		tanzaniteHelmet = new ItemAllGemArmorTextures(gemTANZANITEarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "tanzaniteHelmet")
+				.setTextureName(Reference.MODID + ":" + "tanzaniteHelmet");
+		RegisterHelper.registerItem(tanzaniteHelmet);
+		tanzaniteChest = new ItemAllGemArmorTextures(gemTANZANITEarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "tanzaniteChest")
+				.setTextureName(Reference.MODID + ":" + "tanzaniteChest");
+		RegisterHelper.registerItem(tanzaniteChest);
+		tanzaniteLegs = new ItemAllGemArmorTextures(gemTANZANITEarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "tanzaniteLegs")
+				.setTextureName(Reference.MODID + ":" + "tanzaniteLegs");
+		RegisterHelper.registerItem(tanzaniteLegs);
+		tanzaniteBoots = new ItemAllGemArmorTextures(gemTANZANITEarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "tanzaniteBoots")
+				.setTextureName(Reference.MODID + ":" + "tanzaniteBoots");
+		RegisterHelper.registerItem(tanzaniteBoots);
+		
 		// Peridot
-
+		peridotHelmet = new ItemAllGemArmorTextures(gemPERIDOTarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "peridotHelmet")
+				.setTextureName(Reference.MODID + ":" + "peridotHelmet");
+		RegisterHelper.registerItem(peridotHelmet);
+		peridotChest = new ItemAllGemArmorTextures(gemPERIDOTarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "peridotChest")
+				.setTextureName(Reference.MODID + ":" + "peridotChest");
+		RegisterHelper.registerItem(peridotChest);
+		peridotLegs = new ItemAllGemArmorTextures(gemPERIDOTarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "peridotLegs")
+				.setTextureName(Reference.MODID + ":" + "peridotLegs");
+		RegisterHelper.registerItem(peridotLegs);
+		peridotBoots = new ItemAllGemArmorTextures(gemPERIDOTarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "peridotBoots")
+				.setTextureName(Reference.MODID + ":" + "peridotBoots");
+		RegisterHelper.registerItem(peridotBoots);
+		
 		// Sapphire
-
+		sapphireHelmet = new ItemAllGemArmorTextures(gemSAPPHIREarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "sapphireHelmet")
+				.setTextureName(Reference.MODID + ":" + "sapphireHelmet");
+		RegisterHelper.registerItem(sapphireHelmet);
+		sapphireChest = new ItemAllGemArmorTextures(gemSAPPHIREarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "sapphireChest")
+				.setTextureName(Reference.MODID + ":" + "sapphireChest");
+		RegisterHelper.registerItem(sapphireChest);
+		sapphireLegs = new ItemAllGemArmorTextures(gemSAPPHIREarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "sapphireLegs")
+				.setTextureName(Reference.MODID + ":" + "sapphireLegs");
+		RegisterHelper.registerItem(sapphireLegs);
+		sapphireBoots = new ItemAllGemArmorTextures(gemSAPPHIREarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "sapphireBoots")
+				.setTextureName(Reference.MODID + ":" + "sapphireBoots");
+		RegisterHelper.registerItem(sapphireBoots);
+		
 		// Ruby
-
+		rubyHelmet = new ItemAllGemArmorTextures(gemRUBYarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "rubyHelmet")
+				.setTextureName(Reference.MODID + ":" + "rubyHelmet");
+		RegisterHelper.registerItem(rubyHelmet);
+		rubyChest = new ItemAllGemArmorTextures(gemRUBYarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "rubyChest")
+				.setTextureName(Reference.MODID + ":" + "rubyChest");
+		RegisterHelper.registerItem(rubyChest);
+		rubyLegs = new ItemAllGemArmorTextures(gemRUBYarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "rubyLegs")
+				.setTextureName(Reference.MODID + ":" + "rubyLegs");
+		RegisterHelper.registerItem(rubyLegs);
+		rubyBoots = new ItemAllGemArmorTextures(gemRUBYarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "rubyBoots")
+				.setTextureName(Reference.MODID + ":" + "rubyBoots");
+		RegisterHelper.registerItem(rubyBoots);
+		
 		// Emerald
-
+		emeraldHelmet = new ItemAllGemArmorTextures(gemEMERALDarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "emeraldHelmet")
+				.setTextureName(Reference.MODID + ":" + "emeraldHelmet");
+		RegisterHelper.registerItem(emeraldHelmet);
+		emeraldChest = new ItemAllGemArmorTextures(gemEMERALDarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "emeraldChest")
+				.setTextureName(Reference.MODID + ":" + "emeraldChest");
+		RegisterHelper.registerItem(emeraldChest);
+		emeraldLegs = new ItemAllGemArmorTextures(gemEMERALDarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "emeraldLegs")
+				.setTextureName(Reference.MODID + ":" + "emeraldLegs");
+		RegisterHelper.registerItem(emeraldLegs);
+		emeraldBoots = new ItemAllGemArmorTextures(gemEMERALDarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "emeraldBoots")
+				.setTextureName(Reference.MODID + ":" + "emeraldBoots");
+		RegisterHelper.registerItem(emeraldBoots);
+		
 		// Amethyst
-
+		amethystHelmet = new ItemAllGemArmorTextures(gemAMETHYSTarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "amethystHelmet")
+				.setTextureName(Reference.MODID + ":" + "amethystHelmet");
+		RegisterHelper.registerItem(amethystHelmet);
+		amethystChest = new ItemAllGemArmorTextures(gemAMETHYSTarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "amethystChest")
+				.setTextureName(Reference.MODID + ":" + "amethystChest");
+		RegisterHelper.registerItem(amethystChest);
+		amethystLegs = new ItemAllGemArmorTextures(gemAMETHYSTarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "amethystLegs")
+				.setTextureName(Reference.MODID + ":" + "amethystLegs");
+		RegisterHelper.registerItem(amethystLegs);
+		amethystBoots = new ItemAllGemArmorTextures(gemAMETHYSTarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "amethystBoots")
+				.setTextureName(Reference.MODID + ":" + "amethystBoots");
+		RegisterHelper.registerItem(amethystBoots);
+		
 		// Jet
-
+		jetHelmet = new ItemAllGemArmorTextures(gemJETarmor, 0, 0).setUnlocalizedName(Reference.MODID + "_" + "jetHelmet")
+				.setTextureName(Reference.MODID + ":" + "jetHelmet");
+		RegisterHelper.registerItem(jetHelmet);
+		jetChest = new ItemAllGemArmorTextures(gemJETarmor, 0, 1).setUnlocalizedName(Reference.MODID + "_" + "jetChest")
+				.setTextureName(Reference.MODID + ":" + "jetChest");
+		RegisterHelper.registerItem(jetChest);
+		jetLegs = new ItemAllGemArmorTextures(gemJETarmor, 0, 2).setUnlocalizedName(Reference.MODID + "_" + "jetLegs")
+				.setTextureName(Reference.MODID + ":" + "jetLegs");
+		RegisterHelper.registerItem(jetLegs);
+		jetBoots = new ItemAllGemArmorTextures(gemJETarmor, 0, 3).setUnlocalizedName(Reference.MODID + "_" + "jetBoots")
+				.setTextureName(Reference.MODID + ":" + "jetBoots");
+		RegisterHelper.registerItem(jetBoots);
 	}
 
 }

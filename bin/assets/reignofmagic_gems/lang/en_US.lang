@@ -7,6 +7,7 @@ item.reignofmagic_gems_topazHoe.name=Topaz Hoe
 item.reignofmagic_gems_topazSword.name=Topaz Sword
 item.reignofmagic_gems_topazAxe.name=Topaz Axe
 item.reignofmagic_gems_topazPickaxe.name=Topaz Pickaxe
+
 item.reignofmagic_gems_topazHelmet.name=Topaz Helmet
 item.reignofmagic_gems_topazChest.name=Topaz Chestplate
 item.reignofmagic_gems_topazLegs.name=Topaz Leggings
@@ -18,11 +19,22 @@ item.reignofmagic_gems_malachiteShovel.name=Malachite Shovel
 item.reignofmagic_gems_malachiteHoe.name=Malachite Hoe
 item.reignofmagic_gems_malachiteSword.name=Malachite Sword
 
+item.reignofmagic_gems_malachiteHelmet.name=Malachite Helmet
+item.reignofmagic_gems_malachiteChest.name=Malachite Chestplate
+item.reignofmagic_gems_malachiteLegs.name=Malachite Leggings
+item.reignofmagic_gems_malachiteBoots.name=Malachite Boots
+
+
 item.reignofmagic_gems_amberPickaxe.name=Amber Pickaxe
 item.reignofmagic_gems_amberAxe.name=Amber Axe
 item.reignofmagic_gems_amberShovel.name=Amber Shovel
 item.reignofmagic_gems_amberHoe.name=Amber Hoe
 item.reignofmagic_gems_amberSword.name=Amber Sword
+
+item.reignofmagic_gems_amberHelmet.name=Amber Helmet
+item.reignofmagic_gems_amberChest.name=Amber Chestplate
+item.reignofmagic_gems_amberLegs.name=Amber Leggings
+item.reignofmagic_gems_amberBoots.name=Amber Boots
 
 item.reignofmagic_gems_quartzPickaxe.name=Quartz Pickaxe
 item.reignofmagic_gems_quartzAxe.name=Quartz Axe
@@ -30,11 +42,21 @@ item.reignofmagic_gems_quartzShovel.name=Quartz Shovel
 item.reignofmagic_gems_quartzHoe.name=Quartz Hoe
 item.reignofmagic_gems_quartzSword.name=Quartz Sword
 
+item.reignofmagic_gems_quartzHelmet.name=Quartz Helmet
+item.reignofmagic_gems_quartzChest.name=Quartz Chestplate
+item.reignofmagic_gems_quartzLegs.name=Quartz Leggings
+item.reignofmagic_gems_quartzBoots.name=Quartz Boots
+
 item.reignofmagic_gems_tanzanitePickaxe.name=Tanzanite Pickaxe
 item.reignofmagic_gems_tanzaniteAxe.name=Tanzanite Axe
 item.reignofmagic_gems_tanzaniteShovel.name=Tanzanite Shovel
 item.reignofmagic_gems_tanzaniteHoe.name=Tanzanite Hoe
 item.reignofmagic_gems_tanzaniteSword.name=Tanzanite Sword
+
+item.reignofmagic_gems_tanzaniteHelmet.name=Tanzanite Helmet
+item.reignofmagic_gems_tanzaniteChest.name=Tanzanite Chestplate
+item.reignofmagic_gems_tanzaniteLegs.name=Tanzanite Leggings
+item.reignofmagic_gems_tanzaniteBoots.name=Tanzanite Boots
 
 item.reignofmagic_gems_peridotPickaxe.name=Peridot Pickaxe
 item.reignofmagic_gems_peridotAxe.name=Peridot Axe
@@ -42,11 +64,21 @@ item.reignofmagic_gems_peridotShovel.name=Peridot Shovel
 item.reignofmagic_gems_peridotHoe.name=Peridot Hoe
 item.reignofmagic_gems_peridotSword.name=Peridot Sword
 
+item.reignofmagic_gems_peridotHelmet.name=Peridot Helmet
+item.reignofmagic_gems_peridotChest.name=Peridot Chestplate
+item.reignofmagic_gems_peridotLegs.name=Peridot Leggings
+item.reignofmagic_gems_peridotBoots.name=Peridot Boots
+
 item.reignofmagic_gems_sapphirePickaxe.name=Sapphire Pickaxe
 item.reignofmagic_gems_sapphireAxe.name=Sapphire Axe
 item.reignofmagic_gems_sapphireShovel.name=Sapphire Shovel
 item.reignofmagic_gems_sapphireHoe.name=Sapphire Hoe
 item.reignofmagic_gems_sapphireSword.name=Sapphire Sword
+
+item.reignofmagic_gems_sapphireHelmet.name=Sapphire Helmet
+item.reignofmagic_gems_sapphireChest.name=Sapphire Chestplate
+item.reignofmagic_gems_sapphireLegs.name=Sapphire Leggings
+item.reignofmagic_gems_sapphireBoots.name=Sapphire Boots
 
 item.reignofmagic_gems_rubyPickaxe.name=Ruby Pickaxe
 item.reignofmagic_gems_rubyAxe.name=Ruby Axe
@@ -54,11 +86,21 @@ item.reignofmagic_gems_rubyShovel.name=Ruby Shovel
 item.reignofmagic_gems_rubyHoe.name=Ruby Hoe
 item.reignofmagic_gems_rubySword.name=Ruby Sword
 
+item.reignofmagic_gems_rubyHelmet.name=Ruby Helmet
+item.reignofmagic_gems_rubyChest.name=Ruby Chestplate
+item.reignofmagic_gems_rubyLegs.name=Ruby Leggings
+item.reignofmagic_gems_rubyBoots.name=Ruby Boots
+
 item.reignofmagic_gems_emeraldPickaxe.name=Emerald Pickaxe
 item.reignofmagic_gems_emeraldAxe.name=Emerald Axe
 item.reignofmagic_gems_emeraldShovel.name=Emerald Shovel
 item.reignofmagic_gems_emeraldHoe.name=Emerald Hoe
 item.reignofmagic_gems_emeraldSword.name=Emerald Sword
+
+item.reignofmagic_gems_emeraldHelmet.name=Emerald Helmet
+item.reignofmagic_gems_emeraldChest.name=Emerald Chestplate
+item.reignofmagic_gems_emeraldLegs.name=Emerald Leggings
+item.reignofmagic_gems_emeraldBoots.name=Emerald Boots
 
 item.reignofmagic_gems_amethystPickaxe.name=Amethyst Pickaxe
 item.reignofmagic_gems_amethystAxe.name=Amethyst Axe
@@ -66,14 +108,24 @@ item.reignofmagic_gems_amethystShovel.name=Amethyst Shovel
 item.reignofmagic_gems_amethystHoe.name=Amethyst Hoe
 item.reignofmagic_gems_amethystSword.name=Amethyst Sword
 
+item.reignofmagic_gems_amethystHelmet.name=Amethyst Helmet
+item.reignofmagic_gems_amethystChest.name=Amethyst Chestplate
+item.reignofmagic_gems_amethystLegs.name=Amethyst Leggings
+item.reignofmagic_gems_amethystBoots.name=Amethyst Boots
+
 item.reignofmagic_gems_jetPickaxe.name=Jet Pickaxe
 item.reignofmagic_gems_jetAxe.name=Jet Axe
 item.reignofmagic_gems_jetShovel.name=Jet Shovel
 item.reignofmagic_gems_jetHoe.name=Jet Hoe
 item.reignofmagic_gems_jetSword.name=Jet Sword
 
+item.reignofmagic_gems_jetHelmet.name=Jet Helmet
+item.reignofmagic_gems_jetChest.name=Jet Chestplate
+item.reignofmagic_gems_jetLegs.name=Jet Leggings
+item.reignofmagic_gems_jetBoots.name=Jet Boots
 
-tile.reignofmagic_gems_oreTopaz.name=Topaz Ore
+
+tile.reignofmagic_gems.oreTopaz.name=Topaz Ore
 tile.reignofmagic_gems.oreMalachite.name=Malachite Ore
 tile.reignofmagic_gems.oreAmber.name=Amber Ore
 tile.reignofmagic_gems.oreTanzanite.name=Tanzanite Ore
@@ -83,7 +135,15 @@ tile.reignofmagic_gems.oreRuby.name=Ruby Ore
 tile.reignofmagic_gems.oreAmethyst.name=Amethyst Ore
 tile.reignofmagic_gems.oreJet.name=Jet Ore
 
-
+tile.reignofmagic_gems.blockTopaz.name=Topaz Block
+tile.reignofmagic_gems.blockMalachite.name=Malachite Block
+tile.reignofmagic_gems.blockAmber.name=Amber Block
+tile.reignofmagic_gems.blockTanzanite.name=Tanzanite Block
+tile.reignofmagic_gems.blockPeridot.name=Peridot Block
+tile.reignofmagic_gems.blockSapphire.name=Sapphire Block
+tile.reignofmagic_gems.blockRuby.name=Ruby Block
+tile.reignofmagic_gems.blockAmethyst.name=Amethyst Block
+tile.reignofmagic_gems.blockJet.name=Jet Block
 
 item.reignofmagic_gems_gemTopaz.name=Topaz
 item.reignofmagic_gems_gemMalachite.name=Malachite

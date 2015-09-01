@@ -11,7 +11,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemgemOres extends ItemBlock {
 
-	public static final String[] names = { "Toapz", "Malachite", "Amber", "Tanzanite", "Peridot", "Sapphire", "Ruby",
+	public static final String[] names = { "Topaz", "Malachite", "Amber", "Tanzanite", "Peridot", "Sapphire", "Ruby",
 			"Amethyst", "Jet" };
 
 	public ItemgemOres(Block block) {

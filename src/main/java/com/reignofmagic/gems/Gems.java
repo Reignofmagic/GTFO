@@ -30,17 +30,17 @@ public class Gems {
 	public void preInit(FMLPreInitializationEvent event) {
 
 		ModBlocks.loadBlocks();
-		
 		ModItems.LoadItems();
-		ModRecipes.LoadRecipes();
+		Dictionary.oreDictionary();
 		GameRegistry.registerWorldGenerator(handler, 0);
 
 	}
-
+@EventHandler
 	public void init(FMLInitializationEvent event) {
-Dictionary.oreDictionary();
-	}
 
+ModRecipes.loadRecipes();
+	}
+@EventHandler
 	public void init(FMLPostInitializationEvent event) {
 	
 		
