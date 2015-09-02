@@ -28,61 +28,68 @@ public class ReignWorldGen implements IWorldGenerator {
 		}
 	}
 
-	private void generateEnd(World world, Random random, int x, int z) {
-
-	}
+	private void generateEnd(World world, Random random, int x, int z) {}
 
 	private void generateSurface(World world, Random random, int x, int z) {
-		addOreSpawn(ModBlocks.gemOres, 0, world, random, x, z, 16, 16, 5 + random.nextInt(9), 15, 1, 128);//topaz
-		addOreSpawn(ModBlocks.gemOres, 1, world, random, x, z, 16, 16, 4 + random.nextInt(8), 15, 1, 96);//malachite
-		addOreSpawn(ModBlocks.gemOres, 2, world, random, x, z, 16, 16, 4 + random.nextInt(7), 15, 1, 64);//amber
-		addOreSpawn(ModBlocks.gemOres, 3, world, random, x, z, 16, 16, 3 + random.nextInt(5), 10, 1, 64);//tanzanite
-		addOreSpawn(ModBlocks.gemOres, 4, world, random, x, z, 16, 16, 3 + random.nextInt(5), 6, 1, 48);//peridot
-		addOreSpawn(ModBlocks.gemOres, 5, world, random, x, z, 16, 16, 3 + random.nextInt(4), 6, 1, 48);//sapphire
-		addOreSpawn(ModBlocks.gemOres, 6, world, random, x, z, 16, 16, 3 + random.nextInt(4), 6, 1, 32);//ruby
-		addOreSpawn(ModBlocks.gemOres, 7, world, random, x, z, 16, 16, 2 + random.nextInt(3), 4, 1, 12);//amethyst
-		addOreSpawn(ModBlocks.gemOres, 8, world, random, x, z, 16, 16, 2 + random.nextInt(3), 4, 1, 12);//jet
+		for (int i = 0; i < ModBlocks.gemOres.icons.length; i++) { //Consider using a different array for length
+			int[] ints = getRelevantInts(i, random);
+			addOreSpawn(ModBlocks.gemOres, i, world, random, x, z, 16, 16, ints[0], ints[1], ints[2], ints[3])
+		}
 	}
 
-	private void generateNether(World world, Random random, int x, int z) {
+	private void generateNether(World world, Random random, int x, int z) {}
 
+	/**
+	 * @param metadata			The metadata for the block whose relevantInts you want
+	 * @param random			Just an instance of the Random class
+	 * @return 	The ints needed for the ore generation
+	*/
+	private int[] getRelevantInts(int metadata, Random random) {
+		int[] ret = new int[];
+		switch (metadata) {
+			case 0:
+				ret = { 5 + random.nextInt(9), 15, 1, 128 };
+			case 1:
+				ret = { 4 + random.nextInt(8), 15, 1, 96 };
+			case 2:
+				ret = { 4 + random.nextInt(7), 15, 1, 64 };
+			case 3:
+				ret = { 3 + random.nextInt(5), 10, 1, 64 };
+			case 4:
+				ret = { 3 + random.nextInt(5), 6, 1, 48 };
+			case 5:
+				ret = { 3 + random.nextInt(4), 6, 1, 48 };
+			case 6:
+				ret = { 3 + random.nextInt(4), 6, 1, 32 };
+			case 7:
+				ret = { 2 + random.nextInt(3), 4, 1, 12 };
+			case 8:
+				ret = { 2 + random.nextInt(3), 4, 1, 12 };
+			default:
+				ret = { 5 + random.nextInt(9), 15, 1, 128 };
+		}
+		return ret;
 	}
 
 	/**
-	 * adds an ore spawn to minecraft simply register all ores to spawn with
-	 * this method in your generation method in your IWorldGeneration extending
-	 * class
-	 * 
-	 * @param The Block to spawn
-	 * 
-	 * @param The metadata
-	 * 
-	 * @param The Block where to generate in
-	 * 
-	 * @param the world to spawn in
-	 * 
-	 * @param a random object for retrieving random positions within the world
+	 * @param block 			The Block to spawn
+	 * @param metadata 			The metadata
+	 * @param target 			The Block where to generate in
+	 * @param world 			The world to spawn in
+	 * @param random 			A random object for retrieving random positions within the world
 	 * to spawn the block
-	 * 
-	 * @param an int for passing the x coordinate for the generation method
-	 * 
-	 * @param an int for passing the Z-coordinate for generation method
-	 * 
-	 * @param an int for setting the maximum x coordinate values for spawning on
+	 * @param blockXPos			an int for passing the x coordinate for the generation method
+	 * @param blockZPos			an int for passing the Z-coordinate for generation method
+	 * @param maxX				an int for setting the maximum x coordinate values for spawning on
 	 * the x axis on a per chunk basis
-	 * 
-	 * @param an int for setting the maximum z coordinate values for spawning on
+	 * @param maxZ				an int for setting the maximum z coordinate values for spawning on
 	 * the z axis on a per chunk basis
-	 * 
-	 * @param an int for setting the maximum size of a vein
-	 * 
-	 * @param an int for the number of chances available for the block to spawn
+	 * @param maxVeinSize		an int for setting the maximum size of a vein
+	 * @param chancesToSpawn	an int for the number of chances available for the block to spawn
 	 * per chunk
-	 * 
-	 * @param an int for the minimum y coordinate height at which this block may
+	 * @param minY				an int for the minimum y coordinate height at which this block may
 	 * spawn
-	 * 
-	 * @param an int for the maximum y coordinate height at which this block may
+	 * @param maxY				an int for the maximum y coordinate height at which this block may
 	 * spawn
 	 */
 	public void addOreSpawn(Block block, int metadata, Block target, World world, Random random, int blockXPos,
@@ -99,13 +106,6 @@ public class ReignWorldGen implements IWorldGenerator {
 			int posY = minY + random.nextInt(diffBtwnMinMaxY);
 			int posZ = blockZPos + random.nextInt(maxZ);
 			(new WorldGenMinable(block, metadata, maxVeinSize, target)).generate(world, random, posX, posY, posZ);
-
 		}
-	}
-	
-	public void addOreSpawn(Block block, int metadata, World world, Random random, int blockXPos,
-			int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY) {
-		this.addOreSpawn(block, metadata, Blocks.stone, world, random, blockXPos, blockZPos, maxX, maxZ, maxVeinSize, chancesToSpawn, minY, maxY);
-
 	}
 }
