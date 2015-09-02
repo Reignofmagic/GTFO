@@ -1,25 +1,15 @@
 package com.reignofmagic.gems.items;
 
 import java.util.List;
-import java.util.Random;
-
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
-import com.reignofmagic.gems.helper.RegisterHelper;
-import com.reignofmagic.gems.items.ModItems;
-
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import net.minecraft.util.MathHelper;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class ItemGemstones extends Item {
 //                    0             1              2           3                4              5           6          7              8
