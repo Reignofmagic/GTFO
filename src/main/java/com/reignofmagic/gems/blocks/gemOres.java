@@ -6,7 +6,7 @@ import java.util.Random;
 
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
-import com.reignofmagic.gems.items.ModItems;
+import com.reignofmagic.gems.init.ModItems;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,7 +21,7 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class gemOres extends Block {
+public class GemOres extends Block {
 
 	String name = "AllGems";
 
@@ -29,7 +29,7 @@ public class gemOres extends Block {
 	@SideOnly(Side.CLIENT)
 	public IIcon[] icons = new IIcon[9];
 
-	public gemOres() {
+	public GemOres() {
 		super(Material.rock);
 		setBlockName(Reference.MODID + ".ore");
 		setStepSound(soundTypeStone);
@@ -45,7 +45,6 @@ public class gemOres extends Block {
 		setHarvestLevel("pickaxe", 3, 6);
 		setHarvestLevel("pickaxe", 3, 7);
 		setHarvestLevel("pickaxe", 4, 8);
-
 	}
 
 	@Override
@@ -122,9 +121,10 @@ public class gemOres extends Block {
 	public int damageDropped(int meta) {
 	    return meta;
 	}
-	@Override public Item getItemDropped(int metadata, Random rand, int fortune)
+	
+	@Override 
+	public Item getItemDropped(int metadata, Random rand, int fortune)
 	{
 		return ModItems.Gemstones;
 	}
-
 }

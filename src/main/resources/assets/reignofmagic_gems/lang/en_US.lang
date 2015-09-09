@@ -124,6 +124,20 @@ item.reignofmagic_gems_jetChest.name=Jet Chestplate
 item.reignofmagic_gems_jetLegs.name=Jet Leggings
 item.reignofmagic_gems_jetBoots.name=Jet Boots
 
+item.reignofmagic_gems_topazdualTool.name=Topaz Dual Tool
+item.reignofmagic_gems_malachitedualTool.name=Malachite Dual Tool
+item.reignofmagic_gems_quartzdualTool.name=Quartz Dual Tool
+item.reignofmagic_gems_amberdualTool.name=Amber Dual Tool
+item.reignofmagic_gems_tanzanitedualTool.name=Tanzanite Dual Tool
+item.reignofmagic_gems_diamonddualTool.name=Diamond Dual Tool
+item.reignofmagic_gems_peridotdualTool.name=Peridot Dual Tool
+item.reignofmagic_gems_sapphiredualTool.name=Sapphire Dual Tool
+item.reignofmagic_gems_rubydualTool.name=Ruby Dual Tool
+item.reignofmagic_gems_emeralddualTool.name=Emerald Dual Tool
+item.reignofmagic_gems_amethystdualTool.name=Amethyst Dual Tool
+item.reignofmagic_gems_jetdualTool.name=Jet Dual Tool
+
+
 
 tile.reignofmagic_gems.oreTopaz.name=Topaz Ore
 tile.reignofmagic_gems.oreMalachite.name=Malachite Ore

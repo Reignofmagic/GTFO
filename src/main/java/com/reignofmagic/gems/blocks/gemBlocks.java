@@ -6,7 +6,6 @@ import java.util.Random;
 
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
-import com.reignofmagic.gems.items.ModItems;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,11 +16,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class gemBlocks extends Block {
+public class GemBlocks extends Block {
 
 	String name = "allGemBlocks";
 
@@ -29,7 +26,7 @@ public class gemBlocks extends Block {
 	@SideOnly(Side.CLIENT)
 	public IIcon[] icons = new IIcon[9];
 
-	public gemBlocks() {
+	public GemBlocks() {
 		super(Material.rock);
 		setBlockName(Reference.MODID + ".block");
 		setStepSound(soundTypeStone);
@@ -37,8 +34,6 @@ public class gemBlocks extends Block {
 		setResistance(7F);
 		setCreativeTab(Gems.GTFOtab);
 		setHarvestLevel("pickaxe", 2);
-
-
 	}
 
 	@Override

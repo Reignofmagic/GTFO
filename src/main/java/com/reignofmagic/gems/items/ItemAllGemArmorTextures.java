@@ -2,10 +2,9 @@ package com.reignofmagic.gems.items;
 
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
+import com.reignofmagic.gems.init.ModItems;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
