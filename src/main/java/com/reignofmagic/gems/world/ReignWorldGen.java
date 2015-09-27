@@ -33,13 +33,13 @@ public class ReignWorldGen implements IWorldGenerator {
 	}
 
 	private void generateSurface(World world, Random random, int x, int z) {
-		addOreSpawn(ModBlocks.gemOres, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(9), 15, 1, 128);//topaz
-		addOreSpawn(ModBlocks.gemOres, 1, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(8), 15, 1, 96);//malachite
-		addOreSpawn(ModBlocks.gemOres, 2, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(7), 15, 1, 64);//amber
-		addOreSpawn(ModBlocks.gemOres, 3, Blocks.stone, world, random, x, z, 16, 16, 3 + random.nextInt(5), 10, 1, 64);//tanzanite
-		addOreSpawn(ModBlocks.gemOres, 4, Blocks.stone, world, random, x, z, 16, 16, 3 + random.nextInt(5), 6, 1, 48);//peridot
-		addOreSpawn(ModBlocks.gemOres, 5, Blocks.stone, world, random, x, z, 16, 16, 3 + random.nextInt(4), 6, 1, 48);//sapphire
-		addOreSpawn(ModBlocks.gemOres, 6, Blocks.stone, world, random, x, z, 16, 16, 3 + random.nextInt(4), 6, 1, 32);//ruby
+		addOreSpawn(ModBlocks.gemOres, 0, Blocks.stone, world, random, x, z, 16, 16, 5 + random.nextInt(9), 10, 1, 128);//topaz
+		addOreSpawn(ModBlocks.gemOres, 1, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(8), 9, 1, 96);//malachite
+		addOreSpawn(ModBlocks.gemOres, 2, Blocks.stone, world, random, x, z, 16, 16, 4 + random.nextInt(7), 8, 1, 64);//amber
+		addOreSpawn(ModBlocks.gemOres, 3, Blocks.stone, world, random, x, z, 16, 16, 3 + random.nextInt(5), 7, 1, 64);//tanzanite
+		addOreSpawn(ModBlocks.gemOres, 4, Blocks.stone, world, random, x, z, 16, 16, 2 + random.nextInt(5), 4, 1, 48);//peridot
+		addOreSpawn(ModBlocks.gemOres, 5, Blocks.stone, world, random, x, z, 16, 16, 2 + random.nextInt(4), 4, 1, 48);//sapphire
+		addOreSpawn(ModBlocks.gemOres, 6, Blocks.stone, world, random, x, z, 16, 16, 2 + random.nextInt(3), 4, 1, 32);//ruby
 		addOreSpawn(ModBlocks.gemOres, 7, Blocks.stone, world, random, x, z, 16, 16, 2 + random.nextInt(3), 2, 1, 12);//amethyst
 		addOreSpawn(ModBlocks.gemOres, 8, Blocks.stone, world, random, x, z, 16, 16, 2 + random.nextInt(3), 2, 1, 12);//jet
 

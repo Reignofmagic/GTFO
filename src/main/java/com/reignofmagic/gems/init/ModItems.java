@@ -9,6 +9,7 @@ import com.reignofmagic.gems.items.ItemGTFOHoe;
 import com.reignofmagic.gems.items.ItemGTFOPickaxe;
 import com.reignofmagic.gems.items.ItemGTFOShovel;
 import com.reignofmagic.gems.items.ItemGTFOSword;
+import com.reignofmagic.gems.items.ItemGemPutty;
 import com.reignofmagic.gems.items.ItemGemstones;
 import com.reignofmagic.gems.items.ItemToolTest;
 
@@ -23,6 +24,9 @@ public class ModItems {
 	public static Item Gemstones;
 
 	// Tools Section
+	
+	// Repair
+	public static Item gemPutty;
 
 	// Topaz
 	public static Item topazPickaxe;
@@ -167,7 +171,7 @@ public class ModItems {
 	
 	
 	//TestTool
-	public static Item testTool;
+	//public static Item testTool;
 	
 	//Dual Tools
 	public static Item topazDual;
@@ -215,7 +219,7 @@ public class ModItems {
 	
 	
 	//Simply testing multi-tools
-	public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 99999, 50F, 1.5F, 125);
+	//public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 99999, 50F, 1.5F, 125);
 
 	// Armor Material
 
@@ -251,8 +255,12 @@ public class ModItems {
 
 		// Tools Section
 
-		testTool = new ItemToolTest(testToolMat);
-		RegisterHelper.registerItem(testTool);
+	/*	testTool = new ItemToolTest(testToolMat);
+		RegisterHelper.registerItem(testTool);*/
+		
+		// Repair
+		gemPutty = new ItemGemPutty();
+		GameRegistry.registerItem(gemPutty, "gemPutty");
 		
 		
 		// Topaz

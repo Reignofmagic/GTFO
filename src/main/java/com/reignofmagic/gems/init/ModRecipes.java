@@ -2,6 +2,7 @@ package com.reignofmagic.gems.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraftforge.oredict.ShapedOreRecipe;
@@ -337,6 +338,32 @@ public class ModRecipes {
 		//GemBlocks to Compressed GemBlocks
 
 		
+		
+		//GemPutty
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "XXX", 'X',
+				"gemTopaz", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "XX ", 'X',
+				"gemMalachite", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "X  ", 'X',
+				"gemQuartz", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "X  ", 'X',
+				"gemAmber", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", 'X',
+				"gemTanzanite", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XS ", 'X',
+				"gemDiamond", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+				"gemPeridot", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+				"gemSapphire", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+				"gemRuby", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+				"gemEmerald", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XSX", 'X',
+				"gemAmethyst", 'S', Items.slime_ball));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4),  "XS ", 'X',
+				"gemJet", 'S', Items.slime_ball));
 		
 	}
 
