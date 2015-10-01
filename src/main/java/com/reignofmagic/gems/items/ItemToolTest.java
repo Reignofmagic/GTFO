@@ -4,22 +4,26 @@ import java.util.Set;
 
 import com.google.common.collect.ImmutableSet;
 import com.reignofmagic.gems.Gems;
+import com.reignofmagic.gems.init.AOEHarvest;
 
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 
-public class ItemToolTest extends ItemPickaxe {
+public class ItemToolTest extends AOEHarvest {
 
 	public ItemToolTest(ToolMaterial material) {
-		super(material);
+		super(material, 5, 5);
 		setCreativeTab(Gems.GTFOtab);
 		this.setHarvestLevel("pickaxe", 10);
 		this.setHarvestLevel("Shovel", 10);
 
 
 	}
+	
 
-	@Override
+	
+	//For both the digging of dirt and Stone!
+/*	@Override
 	public Set<String> getToolClasses(ItemStack stack) {
 		return ImmutableSet.of("pickaxe", "shovel");
 	}
@@ -32,7 +36,7 @@ public class ItemToolTest extends ItemPickaxe {
 			else {
 			return -1;
 		}
-	}
+	}*/
 	
 
 }

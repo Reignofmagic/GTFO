@@ -340,29 +340,29 @@ public class ModRecipes {
 		
 		
 		//GemPutty
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "XXX", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XSX", "XXX", 'X',
 				"gemTopaz", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "XX ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XSX", "XX ", 'X',
 				"gemMalachite", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "X  ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XSX", "X  ", 'X',
 				"gemQuartz", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", "X  ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XSX", "X  ", 'X',
 				"gemAmber", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XSX", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XSX", 'X',
 				"gemTanzanite", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", "XS ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", "XS ", 'X',
 				"gemDiamond", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", " S ", 'X',
 				"gemPeridot", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", " S ", 'X',
 				"gemSapphire", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", " S ", 'X',
 				"gemRuby", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XXX", " S ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XXX", " S ", 'X',
 				"gemEmerald", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4), "XSX", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty), "XSX", 'X',
 				"gemAmethyst", 'S', Items.slime_ball));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty, 4),  "XS ", 'X',
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty),  "XS ", 'X',
 				"gemJet", 'S', Items.slime_ball));
 		
 	}

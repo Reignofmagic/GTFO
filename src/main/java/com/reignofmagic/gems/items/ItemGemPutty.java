@@ -8,7 +8,8 @@ import net.minecraft.item.Item;
 public class ItemGemPutty extends Item {
 	public ItemGemPutty() {
 		super();
-		setUnlocalizedName(Reference.MODID + "_" + "name" + "Putty");
+		setUnlocalizedName(Reference.MODID + "_" + "Putty");
+		setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(Gems.GTFOtab);
 }
 }

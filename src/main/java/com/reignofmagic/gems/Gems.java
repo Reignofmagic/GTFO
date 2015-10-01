@@ -6,6 +6,7 @@ import com.reignofmagic.gems.init.GTFOtab;
 import com.reignofmagic.gems.init.ModBlocks;
 import com.reignofmagic.gems.init.ModItems;
 import com.reignofmagic.gems.init.ModRecipes;
+import com.reignofmagic.gems.init.onAnvilUpdate;
 import com.reignofmagic.gems.world.ReignWorldGen;
 
 import cpw.mods.fml.common.Mod;
@@ -15,6 +16,9 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AnvilUpdateEvent;
+import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME)
 
@@ -29,6 +33,7 @@ public class Gems {
 		ModItems.LoadItems();
 		Dictionary.oreDictionary();
 		GameRegistry.registerWorldGenerator(handler, 0);
+		MinecraftForge.EVENT_BUS.register(new onAnvilUpdate());
 
 	}
 	
@@ -38,7 +43,10 @@ public class Gems {
 		ModRecipes.loadRecipes();
 		
 	}
+@EventHandler
+public void init(AnvilUpdateEvent event){
 	
+}
 	@EventHandler
 	public void init(FMLPostInitializationEvent event) {
 	

@@ -16,6 +16,7 @@ import com.reignofmagic.gems.items.ItemToolTest;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
@@ -171,7 +172,7 @@ public class ModItems {
 	
 	
 	//TestTool
-	//public static Item testTool;
+	public static Item testTool;
 	
 	//Dual Tools
 	public static Item topazDual;
@@ -210,16 +211,16 @@ public class ModItems {
 	public static Item.ToolMaterial gemAMBERDual = EnumHelper.addToolMaterial("dualAMBER", 2, 1250, 7F, 2.5F, 12);
 	public static Item.ToolMaterial gemTANZANITEDual = EnumHelper.addToolMaterial("dualTANZANITE", 2, 2150, 7.5F, 2.75F, 12);
 	public static Item.ToolMaterial gemDIAMONDDual = EnumHelper.addToolMaterial("gemDIMAOND", 3, 3216, 8F, 3F, 10);
-	public static Item.ToolMaterial gemPERIDOTDual = EnumHelper.addToolMaterial("dualPERIDOT", 2, 3748, 10F, 5F, 12);
-	public static Item.ToolMaterial gemSAPPHIREDual = EnumHelper.addToolMaterial("dualSAPPHIRE", 2, 4498, 10F, 8F, 13);
-	public static Item.ToolMaterial gemRUBYDual = EnumHelper.addToolMaterial("dualRUBY", 2, 5398, 14F, 11F, 14);
-	public static Item.ToolMaterial gemEMERALDDual = EnumHelper.addToolMaterial("dualEMERALD", 2, 8098, 16F, 15F, 16);
-	public static Item.ToolMaterial gemAMETHYSTDual = EnumHelper.addToolMaterial("dualAMETHYST", 2, 12146, 20F, 20F, 20);
-	public static Item.ToolMaterial gemJETDual = EnumHelper.addToolMaterial("dualJET", 2, 18220, 25F, 25F, 25);
+	public static Item.ToolMaterial gemPERIDOTDual = EnumHelper.addToolMaterial("dualPERIDOT", 3, 3748, 10F, 5F, 12);
+	public static Item.ToolMaterial gemSAPPHIREDual = EnumHelper.addToolMaterial("dualSAPPHIRE", 3, 4498, 10F, 8F, 13);
+	public static Item.ToolMaterial gemRUBYDual = EnumHelper.addToolMaterial("dualRUBY", 3, 5398, 14F, 11F, 14);
+	public static Item.ToolMaterial gemEMERALDDual = EnumHelper.addToolMaterial("dualEMERALD", 3, 8098, 16F, 15F, 16);
+	public static Item.ToolMaterial gemAMETHYSTDual = EnumHelper.addToolMaterial("dualAMETHYST", 4, 12146, 20F, 20F, 20);
+	public static Item.ToolMaterial gemJETDual = EnumHelper.addToolMaterial("dualJET", 50, 18220, 25F, 25F, 25);
 	
 	
 	//Simply testing multi-tools
-	//public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 99999, 50F, 1.5F, 125);
+	public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 99999, 50F, 1.5F, 125);
 
 	// Armor Material
 
@@ -255,8 +256,8 @@ public class ModItems {
 
 		// Tools Section
 
-	/*	testTool = new ItemToolTest(testToolMat);
-		RegisterHelper.registerItem(testTool);*/
+		testTool = new ItemToolTest(testToolMat);
+		RegisterHelper.registerItem(testTool);
 		
 		// Repair
 		gemPutty = new ItemGemPutty();
