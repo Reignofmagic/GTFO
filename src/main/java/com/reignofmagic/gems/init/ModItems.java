@@ -4,12 +4,17 @@ import com.reignofmagic.gems.helper.Reference;
 import com.reignofmagic.gems.helper.RegisterHelper;
 import com.reignofmagic.gems.items.ItemAllGemArmorTextures;
 import com.reignofmagic.gems.items.ItemDualTool;
+import com.reignofmagic.gems.items.ItemGTFOAOEAxe;
+import com.reignofmagic.gems.items.ItemGTFOAOEDual;
 import com.reignofmagic.gems.items.ItemGTFOAxe;
 import com.reignofmagic.gems.items.ItemGTFOHoe;
+import com.reignofmagic.gems.items.ItemGTFOAOEPick;
+import com.reignofmagic.gems.items.ItemGTFOAOEShovel;
 import com.reignofmagic.gems.items.ItemGTFOPickaxe;
 import com.reignofmagic.gems.items.ItemGTFOShovel;
 import com.reignofmagic.gems.items.ItemGTFOSword;
 import com.reignofmagic.gems.items.ItemGemPutty;
+import com.reignofmagic.gems.items.ItemGemPuttyCompact;
 import com.reignofmagic.gems.items.ItemGemstones;
 import com.reignofmagic.gems.items.ItemToolTest;
 
@@ -19,8 +24,12 @@ import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 
+
+// Thanks to Hlaaftana for making this page better Namely, auto generating tool types based on their name. 
 public class ModItems {
 
+	
+	
 	// Gems
 	public static Item Gemstones;
 
@@ -28,6 +37,7 @@ public class ModItems {
 	
 	// Repair
 	public static Item gemPutty;
+	public static Item gemPuttyCompact;
 
 	// Topaz
 	public static Item topazPickaxe;
@@ -172,7 +182,7 @@ public class ModItems {
 	
 	
 	//TestTool
-	public static Item testTool;
+	/*public static Item testTool;*/
 	
 	//Dual Tools
 	public static Item topazDual;
@@ -187,6 +197,64 @@ public class ModItems {
 	public static Item emeraldDual;
 	public static Item amethystDual;
 	public static Item jetDual;
+	
+	//AOE Pick
+	public static Item topazAOEPick;
+	public static Item malachiteAOEPick;
+	public static Item quartzAOEPick;
+	public static Item amberAOEPick;
+	public static Item tanzaniteAOEPick;
+	public static Item diamondAOEPick;
+	public static Item peridotAOEPick;
+	public static Item sapphireAOEPick;
+	public static Item rubyAOEPick;
+	public static Item emeraldAOEPick;
+	public static Item amethystAOEPick;
+	public static Item jetAOEPick;
+	
+	
+	//AOE Shovel
+	public static Item topazAOEShovel;
+	public static Item malachiteAOEShovel;
+	public static Item quartzAOEShovel;
+	public static Item amberAOEShovel;
+	public static Item tanzaniteAOEShovel;
+	public static Item diamondAOEShovel;
+	public static Item peridotAOEShovel;
+	public static Item sapphireAOEShovel;
+	public static Item rubyAOEShovel;
+	public static Item emeraldAOEShovel;
+	public static Item amethystAOEShovel;
+	public static Item jetAOEShovel;
+	
+	//AOE Axe
+	public static Item topazAOEAxe;
+	public static Item malachiteAOEAxe;
+	public static Item quartzAOEAxe;
+	public static Item amberAOEAxe;
+	public static Item tanzaniteAOEAxe;
+	public static Item diamondAOEAxe;
+	public static Item peridotAOEAxe;
+	public static Item sapphireAOEAxe;
+	public static Item rubyAOEAxe;
+	public static Item emeraldAOEAxe;
+	public static Item amethystAOEAxe;
+	public static Item jetAOEAxe;
+	
+	//AOE Pick & Shovel / Dual
+	public static Item topazAOEDual;
+	public static Item malachiteAOEDual;
+	public static Item quartzAOEDual;
+	public static Item amberAOEDual;
+	public static Item tanzaniteAOEDual;
+	public static Item diamondAOEDual;
+	public static Item peridotAOEDual;
+	public static Item sapphireAOEDual;
+	public static Item rubyAOEDual;
+	public static Item emeraldAOEDual;
+	public static Item amethystAOEDual;
+	public static Item jetAOEDual;
+	
 	
 	// Material Tool Single Purpose
 
@@ -205,7 +273,7 @@ public class ModItems {
 
 	// Dual Tool Material
 
-	public static Item.ToolMaterial gemTOPAZDual = EnumHelper.addToolMaterial("dualTOPAZ", 2, 370, 5F, 1.5F, 16);
+	public static Item.ToolMaterial gemTOPAZDual = EnumHelper.addToolMaterial("dualTOPAZ", 2, 340, 5F, 1.5F, 16);
 	public static Item.ToolMaterial gemMALACHITEDual = EnumHelper.addToolMaterial("dualMALACHITE", 2, 420, 5.5F, 1.75F, 15);
 	public static Item.ToolMaterial gemQUARTZDual = EnumHelper.addToolMaterial("dualQUARTZ", 2, 530, 6.5F, 2.25F, 14);
 	public static Item.ToolMaterial gemAMBERDual = EnumHelper.addToolMaterial("dualAMBER", 2, 1250, 7F, 2.5F, 12);
@@ -218,8 +286,36 @@ public class ModItems {
 	public static Item.ToolMaterial gemAMETHYSTDual = EnumHelper.addToolMaterial("dualAMETHYST", 4, 12146, 20F, 20F, 20);
 	public static Item.ToolMaterial gemJETDual = EnumHelper.addToolMaterial("dualJET", 50, 18220, 25F, 25F, 25);
 	
+	//AOE Tool Material
+	public static Item.ToolMaterial gemAOETOPAZ = EnumHelper.addToolMaterial("gemAOETOPAZ", 2, 1530, 3F, 1.5F, 16);
+	public static Item.ToolMaterial gemAOEMALACHITE = EnumHelper.addToolMaterial("gemAOEMALACHITE", 2, 1890, 3.5F, 1.75F, 15);
+	public static Item.ToolMaterial gemAOEQUARTZ = EnumHelper.addToolMaterial("gemAOEQUARTZ", 2, 2385, 4.5F, 2.25F, 14);
+	public static Item.ToolMaterial gemAOEAMBER = EnumHelper.addToolMaterial("gemAOEAMBER", 2, 5625, 5F, 2.5F, 12);
+	public static Item.ToolMaterial gemAOETANZANITE = EnumHelper.addToolMaterial("gemAOETANZANITE", 2, 9675, 5.5F, 2.75F, 12);
+	public static Item.ToolMaterial gemAOEDIAMOND = EnumHelper.addToolMaterial("gemAOEDIMAOND", 3, 12730, 6F, 3F, 10);
+	public static Item.ToolMaterial gemAOEPERIDOT = EnumHelper.addToolMaterial("gemAOEPERIDOT", 3, 15276, 8F, 5F, 12);
+	public static Item.ToolMaterial gemAOESAPPHIRE = EnumHelper.addToolMaterial("gemAOESAPPHIRE", 3, 17822, 8F, 8F, 13);
+	public static Item.ToolMaterial gemAOERUBY = EnumHelper.addToolMaterial("gemAOERUBY", 3, 19095, 12F, 9F, 14);
+	public static Item.ToolMaterial gemAOEEMERALD = EnumHelper.addToolMaterial("gemAOEEMERALD", 3, 20368, 12F, 15F, 16);
+	public static Item.ToolMaterial gemAOEAMETHYST = EnumHelper.addToolMaterial("gemAOEAMETHYST", 4, 22914, 15F, 20F, 20);
+	public static Item.ToolMaterial gemAOEJET = EnumHelper.addToolMaterial("gemAOEJET", 50, 25460, 20F, 25F, 25);
 	
-	//Simply testing multi-tools
+	//AOE Dual Tool Material
+	public static Item.ToolMaterial gemAOEDUALTOPAZ = EnumHelper.addToolMaterial("gemAOEDUALTOPAZ", 2, 3060, 3F, 1.5F, 16);
+	public static Item.ToolMaterial gemAOEDUALMALACHITE = EnumHelper.addToolMaterial("gemAOEDUALMALACHITE", 2, 3780, 3.5F, 1.75F, 15);
+	public static Item.ToolMaterial gemAOEDUALQUARTZ = EnumHelper.addToolMaterial("gemAOEDUALQUARTZ", 2, 4770, 4.5F, 2.25F, 14);
+	public static Item.ToolMaterial gemAOEDUALAMBER = EnumHelper.addToolMaterial("gemAOEDUALAMBER", 2, 11250, 5F, 2.5F, 12);
+	public static Item.ToolMaterial gemAOEDUALTANZANITE = EnumHelper.addToolMaterial("gemAOEDUALTANZANITE", 2, 13080, 5.5F, 2.75F, 12);
+	public static Item.ToolMaterial gemAOEDUALDIAMOND = EnumHelper.addToolMaterial("gemAOEDUALDIMAOND", 3, 16350, 6F, 3F, 10);
+	public static Item.ToolMaterial gemAOEDUALPERIDOT = EnumHelper.addToolMaterial("gemAOEDUALPERIDOT", 3, 19620, 8F, 5F, 12);
+	public static Item.ToolMaterial gemAOEDUALSAPPHIRE = EnumHelper.addToolMaterial("gemAOEDUALSAPPHIRE", 3, 22890, 8F, 8F, 13);
+	public static Item.ToolMaterial gemAOEDUALRUBY = EnumHelper.addToolMaterial("gemAOEDUALRUBY", 3, 24525, 12F, 9F, 14);
+	public static Item.ToolMaterial gemAOEDUALEMERALD = EnumHelper.addToolMaterial("gemAOEDUALEMERALD", 3, 26160, 12F, 15F, 16);
+	public static Item.ToolMaterial gemAOEDUALAMETHYST = EnumHelper.addToolMaterial("gemAOEDUALAMETHYST", 4, 29430, 15F, 20F, 20);
+	public static Item.ToolMaterial gemAOEDUALJET = EnumHelper.addToolMaterial("gemAOEDUALJET", 50, 32700, 20F, 25F, 25);
+	
+	
+	//Simply testing tools
 	public static Item.ToolMaterial testToolMat = EnumHelper.addToolMaterial("testToolMat", 10, 99999, 50F, 1.5F, 125);
 
 	// Armor Material
@@ -249,6 +345,9 @@ public class ModItems {
 	
 
 	public static void LoadItems() {
+		
+	
+		
 
 		// Gems
 		Gemstones = new ItemGemstones();
@@ -256,12 +355,16 @@ public class ModItems {
 
 		// Tools Section
 
-		testTool = new ItemToolTest(testToolMat);
-		RegisterHelper.registerItem(testTool);
+	/*	testTool = new ItemToolTest(testToolMat);
+		RegisterHelper.registerItem(testTool);*/
 		
 		// Repair
 		gemPutty = new ItemGemPutty();
 		GameRegistry.registerItem(gemPutty, "gemPutty");
+		gemPuttyCompact = new ItemGemPuttyCompact();
+		GameRegistry.registerItem(gemPuttyCompact, "gemPuttyCompact");
+		
+		
 		
 		
 		// Topaz
@@ -277,6 +380,17 @@ public class ModItems {
 		RegisterHelper.registerItem(topazSword);		
 		topazDual = new ItemDualTool(gemTOPAZDual, "topaz");
 		RegisterHelper.registerItem(topazDual);
+		
+		// Topaz AOE
+		topazAOEPick = new ItemGTFOAOEPick(gemAOETOPAZ, "topaz");
+		RegisterHelper.registerItem(topazAOEPick);
+		topazAOEShovel = new ItemGTFOAOEShovel(gemAOETOPAZ, "topaz");
+		RegisterHelper.registerItem(topazAOEShovel);
+		topazAOEAxe = new ItemGTFOAOEAxe(gemAOETOPAZ, "topaz");
+		RegisterHelper.registerItem(topazAOEAxe);
+		topazAOEDual = new ItemGTFOAOEDual(gemAOEDUALTOPAZ, "topaz");
+		RegisterHelper.registerItem(topazAOEDual);
+		
 
 		// Malachite
 		malachitePickaxe = new ItemGTFOPickaxe(gemMALACHITE, "malachite");
@@ -291,6 +405,16 @@ public class ModItems {
 		RegisterHelper.registerItem(malachiteSword);
 		malachiteDual = new ItemDualTool(gemMALACHITEDual, "malachite");
 		RegisterHelper.registerItem(malachiteDual);
+		
+		// Malachite AOE
+		malachiteAOEPick = new ItemGTFOAOEPick(gemAOEMALACHITE, "malachite");
+		RegisterHelper.registerItem(malachiteAOEPick);
+		malachiteAOEShovel = new ItemGTFOAOEShovel(gemAOEMALACHITE, "malachite");
+		RegisterHelper.registerItem(malachiteAOEShovel);
+		malachiteAOEAxe = new ItemGTFOAOEAxe(gemAOEMALACHITE, "malachite");
+		RegisterHelper.registerItem(malachiteAOEAxe);
+		malachiteAOEDual = new ItemGTFOAOEDual(gemAOEDUALMALACHITE, "malachite");
+		RegisterHelper.registerItem(malachiteAOEDual);
 
 		// Quartz
 		quartzPickaxe = new ItemGTFOPickaxe(gemQUARTZ, "quartz");
@@ -305,6 +429,16 @@ public class ModItems {
 		RegisterHelper.registerItem(quartzSword);
 		quartzDual = new ItemDualTool(gemQUARTZDual, "quartz");
 		RegisterHelper.registerItem(quartzDual);
+		
+		// Quartz AOE
+		quartzAOEPick = new ItemGTFOAOEPick(gemAOEQUARTZ, "quartz");
+		RegisterHelper.registerItem(quartzAOEPick);
+		quartzAOEShovel = new ItemGTFOAOEShovel(gemAOEQUARTZ, "quartz");
+		RegisterHelper.registerItem(quartzAOEShovel);
+		quartzAOEAxe = new ItemGTFOAOEAxe(gemAOEQUARTZ, "quartz");
+		RegisterHelper.registerItem(quartzAOEAxe);
+		quartzAOEDual = new ItemGTFOAOEDual(gemAOEDUALQUARTZ, "quartz");
+		RegisterHelper.registerItem(quartzAOEDual);
 
 		// Amber
 		amberPickaxe = new ItemGTFOPickaxe(gemAMBER, "amber");
@@ -319,6 +453,16 @@ public class ModItems {
 		RegisterHelper.registerItem(amberSword);
 		amberDual = new ItemDualTool(gemAMBERDual, "amber");
 		RegisterHelper.registerItem(amberDual);
+		
+		// Amber AOE
+		amberAOEPick = new ItemGTFOAOEPick(gemAOEAMBER, "amber");
+		RegisterHelper.registerItem(amberAOEPick);
+		amberAOEShovel = new ItemGTFOAOEShovel(gemAOEAMBER, "amber");
+		RegisterHelper.registerItem(amberAOEShovel);
+		amberAOEAxe = new ItemGTFOAOEAxe(gemAOEAMBER, "amber");
+		RegisterHelper.registerItem(amberAOEAxe);
+		amberAOEDual = new ItemGTFOAOEDual(gemAOEDUALAMBER, "amber");
+		RegisterHelper.registerItem(amberAOEDual);
 
 		// Tanzanite
 		tanzanitePickaxe = new ItemGTFOPickaxe(gemTANZANITE, "tanzanite");
@@ -334,9 +478,28 @@ public class ModItems {
 		tanzaniteDual = new ItemDualTool(gemTANZANITEDual, "tanzanite");
 		RegisterHelper.registerItem(tanzaniteDual);
 		
+		// Tanzanite AOE
+		tanzaniteAOEPick = new ItemGTFOAOEPick(gemAOETANZANITE, "tanzanite");
+		RegisterHelper.registerItem(tanzaniteAOEPick);
+		tanzaniteAOEShovel = new ItemGTFOAOEShovel(gemAOETANZANITE, "tanzanite");
+		RegisterHelper.registerItem(tanzaniteAOEShovel);
+		tanzaniteAOEAxe = new ItemGTFOAOEAxe(gemAOETANZANITE, "tanzanite");
+		RegisterHelper.registerItem(tanzaniteAOEAxe);
+		tanzaniteAOEDual = new ItemGTFOAOEDual(gemAOEDUALTANZANITE, "tanzanite");
+		RegisterHelper.registerItem(tanzaniteAOEDual);
+		
 		// Diamond
 		diamondDual = new ItemDualTool(gemDIAMONDDual, "diamond");
 		RegisterHelper.registerItem(diamondDual);
+		// Diamond AOE
+		diamondAOEPick = new ItemGTFOAOEPick(gemAOEDIAMOND, "diamond");
+		RegisterHelper.registerItem(diamondAOEPick);
+		diamondAOEShovel = new ItemGTFOAOEShovel(gemAOEDIAMOND, "diamond");
+		RegisterHelper.registerItem(diamondAOEShovel);
+		diamondAOEAxe = new ItemGTFOAOEAxe(gemAOEDIAMOND, "diamond");
+		RegisterHelper.registerItem(diamondAOEAxe);
+		diamondAOEDual = new ItemGTFOAOEDual(gemAOEDUALDIAMOND, "diamond");
+		RegisterHelper.registerItem(diamondAOEDual);
 
 		// Peridot
 		peridotPickaxe = new ItemGTFOPickaxe(gemPERIDOT, "peridot");
@@ -351,6 +514,16 @@ public class ModItems {
 		RegisterHelper.registerItem(peridotSword);
 		peridotDual = new ItemDualTool(gemPERIDOTDual, "peridot");
 		RegisterHelper.registerItem(peridotDual);
+		
+		// Peridot AOE
+		peridotAOEPick = new ItemGTFOAOEPick(gemAOEPERIDOT, "peridot");
+		RegisterHelper.registerItem(peridotAOEPick);
+		peridotAOEShovel = new ItemGTFOAOEShovel(gemAOEPERIDOT, "peridot");
+		RegisterHelper.registerItem(peridotAOEShovel);
+		peridotAOEAxe = new ItemGTFOAOEAxe(gemAOEPERIDOT, "peridot");
+		RegisterHelper.registerItem(peridotAOEAxe);
+		peridotAOEDual = new ItemGTFOAOEDual(gemAOEDUALPERIDOT, "peridot");
+		RegisterHelper.registerItem(peridotAOEDual);
 
 		// Sapphire
 		sapphirePickaxe = new ItemGTFOPickaxe(gemSAPPHIRE, "sapphire");
@@ -365,6 +538,16 @@ public class ModItems {
 		RegisterHelper.registerItem(sapphireSword);
 		sapphireDual = new ItemDualTool(gemSAPPHIREDual, "sapphire");
 		RegisterHelper.registerItem(sapphireDual);
+		
+		// Sapphire AOE
+		sapphireAOEPick = new ItemGTFOAOEPick(gemAOESAPPHIRE, "sapphire");
+		RegisterHelper.registerItem(sapphireAOEPick);
+		sapphireAOEShovel = new ItemGTFOAOEShovel(gemAOESAPPHIRE, "sapphire");
+		RegisterHelper.registerItem(sapphireAOEShovel);
+		sapphireAOEAxe = new ItemGTFOAOEAxe(gemAOESAPPHIRE, "sapphire");
+		RegisterHelper.registerItem(sapphireAOEAxe);
+		sapphireAOEDual = new ItemGTFOAOEDual(gemAOEDUALSAPPHIRE, "sapphire");
+		RegisterHelper.registerItem(sapphireAOEDual);
 
 		// Ruby
 		rubyPickaxe = new ItemGTFOPickaxe(gemRUBY, "ruby");
@@ -379,6 +562,16 @@ public class ModItems {
 		RegisterHelper.registerItem(rubySword);
 		rubyDual = new ItemDualTool(gemRUBYDual, "ruby");
 		RegisterHelper.registerItem(rubyDual);
+		
+		// Ruby AOE
+		rubyAOEPick = new ItemGTFOAOEPick(gemAOERUBY, "ruby");
+		RegisterHelper.registerItem(rubyAOEPick);
+		rubyAOEShovel = new ItemGTFOAOEShovel(gemAOERUBY, "ruby");
+		RegisterHelper.registerItem(rubyAOEShovel);
+		rubyAOEAxe = new ItemGTFOAOEAxe(gemAOERUBY, "ruby");
+		RegisterHelper.registerItem(rubyAOEAxe);
+		rubyAOEDual = new ItemGTFOAOEDual(gemAOEDUALRUBY, "ruby");
+		RegisterHelper.registerItem(rubyAOEDual);
 
 		// Emerald
 		emeraldPickaxe = new ItemGTFOPickaxe(gemEMERALD, "emerald");
@@ -393,6 +586,16 @@ public class ModItems {
 		RegisterHelper.registerItem(emeraldSword);
 		emeraldDual = new ItemDualTool(gemEMERALDDual, "emerald");
 		RegisterHelper.registerItem(emeraldDual);
+		
+		// Emerald AOE
+		emeraldAOEPick = new ItemGTFOAOEPick(gemAOEEMERALD, "emerald");
+		RegisterHelper.registerItem(emeraldAOEPick);
+		emeraldAOEShovel = new ItemGTFOAOEShovel(gemAOEEMERALD, "emerald");
+		RegisterHelper.registerItem(emeraldAOEShovel);
+		emeraldAOEAxe = new ItemGTFOAOEAxe(gemAOEEMERALD, "emerald");
+		RegisterHelper.registerItem(emeraldAOEAxe);
+		emeraldAOEDual = new ItemGTFOAOEDual(gemAOEDUALEMERALD, "emerald");
+		RegisterHelper.registerItem(emeraldAOEDual);
 
 		// Amethyst
 		amethystPickaxe = new ItemGTFOPickaxe(gemAMETHYST, "amethyst");
@@ -407,6 +610,16 @@ public class ModItems {
 		RegisterHelper.registerItem(amethystSword);
 		amethystDual = new ItemDualTool(gemAMETHYSTDual, "amethyst");
 		RegisterHelper.registerItem(amethystDual);
+		
+		// Amethyst AOE
+		amethystAOEPick = new ItemGTFOAOEPick(gemAOEAMETHYST, "amethyst");
+		RegisterHelper.registerItem(amethystAOEPick);
+		amethystAOEShovel = new ItemGTFOAOEShovel(gemAOEAMETHYST, "amethyst");
+		RegisterHelper.registerItem(amethystAOEShovel);
+		amethystAOEAxe = new ItemGTFOAOEAxe(gemAOEAMETHYST, "amethyst");
+		RegisterHelper.registerItem(amethystAOEAxe);
+		amethystAOEDual = new ItemGTFOAOEDual(gemAOEDUALAMETHYST, "amethyst");
+		RegisterHelper.registerItem(amethystAOEDual);
 
 		// Jet
 		jetPickaxe = new ItemGTFOPickaxe(gemJET, "jet");
@@ -421,6 +634,17 @@ public class ModItems {
 		RegisterHelper.registerItem(jetSword);
 		jetDual = new ItemDualTool(gemJETDual, "jet");
 		RegisterHelper.registerItem(jetDual);
+		
+		// Jet AOE
+		jetAOEPick = new ItemGTFOAOEPick(gemAOEJET, "jet");
+		RegisterHelper.registerItem(jetAOEPick);
+		jetAOEShovel = new ItemGTFOAOEShovel(gemAOEJET, "jet");
+		RegisterHelper.registerItem(jetAOEShovel);
+		jetAOEAxe = new ItemGTFOAOEAxe(gemAOEJET, "jet");
+		RegisterHelper.registerItem(jetAOEAxe);
+		jetAOEDual = new ItemGTFOAOEDual(gemAOEDUALJET, "jet");
+		RegisterHelper.registerItem(jetAOEDual);
+		
 
 		// Armor Section
 

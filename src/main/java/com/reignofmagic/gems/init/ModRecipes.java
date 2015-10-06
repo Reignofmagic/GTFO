@@ -1,6 +1,7 @@
 package com.reignofmagic.gems.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -27,6 +28,15 @@ public class ModRecipes {
 				"gemTopaz", 'P', Items.stone_sword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.topazDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.topazShovel), 'Y', new ItemStack(ModItems.topazPickaxe), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.topazAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockTopaz", 'Y', new ItemStack(ModItems.topazPickaxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.topazAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockTopaz", 'Y', new ItemStack(ModItems.topazShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.topazAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockTopaz", 'Y', new ItemStack(ModItems.topazAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.topazAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.topazAOEShovel), 'Y', new ItemStack(ModItems.topazAOEPick), 'S', Items.stick);
 		
 		
 		//Topaz Armor
@@ -55,6 +65,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.malachiteDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.malachiteShovel), 'Y', new ItemStack(ModItems.malachitePickaxe), 'P', Items.stick);
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachiteAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockMalachite", 'Y', new ItemStack(ModItems.topazAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachiteAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockMalachite", 'Y', new ItemStack(ModItems.topazAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachiteAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockMalachite", 'Y', new ItemStack(ModItems.topazAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.malachiteAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.malachiteAOEShovel), 'Y', new ItemStack(ModItems.malachiteAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachiteAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.topazAOEDual), 'Y', "blockMalachite"));
+		
 		
 		//Malachite Armor
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.malachiteChest), "X X", "XPX", "XXX", 'X',
@@ -80,6 +102,18 @@ public class ModRecipes {
 				"gemQuartz", 'P', ModItems.malachiteSword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.quartzDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.quartzShovel), 'Y', new ItemStack(ModItems.quartzPickaxe), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ItemStack(ModItems.quartzAOEPick), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.quartz_block), 'Y', new ItemStack(ModItems.malachiteAOEPick), 'S', Items.stick);
+		GameRegistry.addRecipe(new ItemStack(ModItems.quartzAOEShovel), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.quartz_block), 'Y', new ItemStack(ModItems.malachiteAOEShovel), 'S', Items.stick);
+		GameRegistry.addRecipe(new ItemStack(ModItems.quartzAOEAxe), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.quartz_block), 'Y', new ItemStack(ModItems.malachiteAOEAxe), 'S', Items.stick);
+		GameRegistry.addRecipe(new ItemStack(ModItems.quartzAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.quartzAOEShovel), 'Y', new ItemStack(ModItems.quartzAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ItemStack(ModItems.quartzAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.malachiteAOEDual), 'Y', new ItemStack(Blocks.quartz_block));
 		
 		
 		//Quartz Armor
@@ -107,6 +141,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.amberDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.amberShovel), 'Y', new ItemStack(ModItems.amberPickaxe), 'S', Items.stick);
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amberAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockAmber", 'Y', new ItemStack(ModItems.quartzAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amberAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockAmber", 'Y', new ItemStack(ModItems.quartzAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amberAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockAmber", 'Y', new ItemStack(ModItems.quartzAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.amberAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.amberAOEShovel), 'Y', new ItemStack(ModItems.amberAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amberAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.quartzAOEDual), 'Y', "blockAmber"));
+		
 		
 		//Amber Armor
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amberChest), "X X", "XPX", "XXX", 'X',
@@ -133,6 +179,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.tanzaniteDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.tanzaniteShovel), 'Y', new ItemStack(ModItems.tanzanitePickaxe), 'S', Items.stick);
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockTanzanite", 'Y', new ItemStack(ModItems.amberAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockTanzanite", 'Y', new ItemStack(ModItems.amberAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockTanzanite", 'Y', new ItemStack(ModItems.amberAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.tanzaniteAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.tanzaniteAOEShovel), 'Y', new ItemStack(ModItems.tanzaniteAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.topazAOEDual), 'Y', "blockTanzanite"));
+		
 		
 		//Tanzanite Armor
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteChest), "X X", "XPX", "XXX", 'X',
@@ -147,6 +205,18 @@ public class ModRecipes {
 		//Diamond Tools
 		GameRegistry.addRecipe(new ItemStack(ModItems.diamondDual), " X ", " Y ", " S ", 'X',
 				Items.diamond_shovel, 'Y', Items.diamond_pickaxe, 'S', Items.stick);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondAOEPick), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.diamond_block), 'Y', new ItemStack(ModItems.tanzaniteAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondAOEShovel), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.diamond_block), 'Y', new ItemStack(ModItems.tanzaniteAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondAOEAxe), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.diamond_block), 'Y', new ItemStack(ModItems.tanzaniteAOEAxe), 'S', Items.stick));
+		
+		GameRegistry.addRecipe(new ItemStack(ModItems.diamondAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.diamondAOEShovel), 'Y', new ItemStack(ModItems.diamondAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.diamondAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.tanzaniteAOEDual), 'Y', new ItemStack(Blocks.diamond_block)));
 		
 		// Peridot Tools
 		
@@ -162,6 +232,18 @@ public class ModRecipes {
 				"gemPeridot", 'P', Items.diamond_sword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.peridotDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.peridotShovel), 'Y', new ItemStack(ModItems.peridotPickaxe), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.peridotAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockPeridot", 'Y', new ItemStack(ModItems.diamondAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.peridotAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockPeridot", 'Y', new ItemStack(ModItems.diamondAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.peridotAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockPeridot", 'Y', new ItemStack(ModItems.diamondAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.peridotAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.peridotAOEShovel), 'Y', new ItemStack(ModItems.peridotAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.peridotAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.diamondAOEDual), 'Y', "blockPeridot"));
 		
 		
 		//Peridot Armor
@@ -189,6 +271,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.sapphireDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.sapphireShovel), 'Y', new ItemStack(ModItems.sapphirePickaxe), 'S', Items.stick);
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphireAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockSapphire", 'Y', new ItemStack(ModItems.peridotAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphireAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockSapphire", 'Y', new ItemStack(ModItems.peridotAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphireAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockSapphire", 'Y', new ItemStack(ModItems.peridotAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.sapphireAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.sapphireAOEShovel), 'Y', new ItemStack(ModItems.sapphireAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphireAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.peridotAOEDual), 'Y', "blockSapphire"));
+		
 		
 		//Sapphire Armor
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.sapphireChest), "X X", "XPX", "XXX", 'X',
@@ -214,6 +308,18 @@ public class ModRecipes {
 				"gemRuby", 'P', ModItems.sapphireSword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.rubyDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.rubyShovel), 'Y', new ItemStack(ModItems.rubyPickaxe), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rubyAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockRuby", 'Y', new ItemStack(ModItems.sapphireAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rubyAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockRuby", 'Y', new ItemStack(ModItems.sapphireAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rubyAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockRuby", 'Y', new ItemStack(ModItems.sapphireAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.rubyAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.rubyAOEShovel), 'Y', new ItemStack(ModItems.rubyAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.rubyAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.sapphireAOEDual), 'Y', "blockRuby"));
 		
 		
 		//Ruby Armor
@@ -241,6 +347,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ItemStack(ModItems.emeraldDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.emeraldShovel), 'Y', new ItemStack(ModItems.emeraldPickaxe), 'S', Items.stick);
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldAOEPick), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.emerald_block), 'Y', new ItemStack(ModItems.rubyAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldAOEShovel), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.emerald_block), 'Y', new ItemStack(ModItems.rubyAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldAOEAxe), "XXX", "XYX", " S ", 'X',
+				new ItemStack(Blocks.emerald_block), 'Y', new ItemStack(ModItems.rubyAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.emeraldAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.emeraldAOEShovel), 'Y', new ItemStack(ModItems.emeraldAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.rubyAOEDual), 'Y', new ItemStack(Blocks.emerald_block)));
+		
 		
 		//Emerald Armor
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.emeraldChest), "X X", "XPX", "XXX", 'X',
@@ -266,6 +384,19 @@ public class ModRecipes {
 				"gemAmethyst", 'P', ModItems.emeraldSword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.amethystDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.amethystShovel), 'Y', new ItemStack(ModItems.amethystPickaxe), 'S', Items.stick);
+
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amethystAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockAmethyst", 'Y', new ItemStack(ModItems.emeraldAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amethystAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockAmethyst", 'Y', new ItemStack(ModItems.emeraldAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amethystAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockAmethyst", 'Y', new ItemStack(ModItems.emeraldAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.amethystAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.amethystAOEShovel), 'Y', new ItemStack(ModItems.amethystAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.amethystAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.emeraldAOEDual), 'Y', "blockAmethyst"));
 		
 		
 		//Amethyst Armor
@@ -292,6 +423,19 @@ public class ModRecipes {
 				"gemJet", 'P', ModItems.amethystSword));
 		GameRegistry.addRecipe(new ItemStack(ModItems.jetDual), " X ", " Y ", " S ", 'X',
 				new ItemStack(ModItems.jetShovel), 'Y', new ItemStack(ModItems.jetPickaxe), 'S', Items.stick);
+		
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jetAOEPick), "XXX", "XYX", " S ", 'X',
+				"blockJet", 'Y', new ItemStack(ModItems.amethystAOEPick), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jetAOEShovel), "XXX", "XYX", " S ", 'X',
+				"blockJet", 'Y', new ItemStack(ModItems.amethystAOEShovel), 'S', Items.stick));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jetAOEAxe), "XXX", "XYX", " S ", 'X',
+				"blockJet", 'Y', new ItemStack(ModItems.amethystAOEAxe), 'S', Items.stick));
+		GameRegistry.addRecipe(new ItemStack(ModItems.jetAOEDual), " X ", " Y ", " S ", 'X',
+				new ItemStack(ModItems.jetAOEShovel), 'Y', new ItemStack(ModItems.jetAOEPick), 'S', Items.stick);
+		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jetAOEDual), "YYY", "YXY", "YYY", 'X',
+				new ItemStack(ModItems.amethystAOEDual), 'Y', "blockJet"));
 		
 		
 		//Jet Armor
@@ -365,6 +509,11 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPutty),  "XS ", 'X',
 				"gemJet", 'S', Items.slime_ball));
 		
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.gemPuttyCompact),  "XX", "XX", 'X',
+				ModItems.gemPutty));
+		
+		
+
 	}
 
 }

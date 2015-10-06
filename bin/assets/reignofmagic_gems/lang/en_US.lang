@@ -137,7 +137,69 @@ item.reignofmagic_gems_emeralddualTool.name=Emerald Dual Tool
 item.reignofmagic_gems_amethystdualTool.name=Amethyst Dual Tool
 item.reignofmagic_gems_jetdualTool.name=Jet Dual Tool
 
+item.reignofmagic_gems_topazAOEPick.name=Large Topaz Pickaxe
+item.reignofmagic_gems_topazAOEShovel.name=Large Topaz Shovel
+item.reignofmagic_gems_topazAOEAxe.name=Large Topaz Axe
+item.reignofmagic_gems_topazAOEDual.name=Large Topaz Dual Tool 
 
+item.reignofmagic_gems_malachiteAOEPick.name=Large Malachite Pickaxe
+item.reignofmagic_gems_malachiteAOEShovel.name=Large Malachite Shovel
+item.reignofmagic_gems_malachiteAOEAxe.name=Large Malachite Axe
+item.reignofmagic_gems_malachiteAOEDual.name=Large Malachite Dual Tool 
+
+item.reignofmagic_gems_quartzAOEPick.name=Large Quartz Pickaxe
+item.reignofmagic_gems_quartzAOEShovel.name=Large Quartz Shovel
+item.reignofmagic_gems_quartzAOEAxe.name=Large Quartz Axe
+item.reignofmagic_gems_quartzAOEDual.name=Large Quartz Dual Tool 
+
+item.reignofmagic_gems_amberAOEPick.name=Large Amber Pickaxe
+item.reignofmagic_gems_amberAOEShovel.name=Large Amber Shovel
+item.reignofmagic_gems_amberAOEAxe.name=Large Amber Axe
+item.reignofmagic_gems_amberAOEDual.name=Large Amber Dual Tool 
+
+item.reignofmagic_gems_tanzaniteAOEPick.name=Large Tanzanite Pickaxe
+item.reignofmagic_gems_tanzaniteAOEShovel.name=Large Tanzanite Shovel
+item.reignofmagic_gems_tanzaniteAOEAxe.name=Large Tanzanite Axe
+item.reignofmagic_gems_tanzaniteAOEDual.name=Large Tanzanite Dual Tool 
+
+item.reignofmagic_gems_diamondAOEPick.name=Large Diamond Pickaxe
+item.reignofmagic_gems_diamondAOEShovel.name=Large Diamond Shovel
+item.reignofmagic_gems_diamondAOEAxe.name=Large Diamond Axe
+item.reignofmagic_gems_diamondAOEDual.name=Large Diamond Dual Tool 
+
+item.reignofmagic_gems_peridotAOEPick.name=Large Peridot Pickaxe
+item.reignofmagic_gems_peridotAOEShovel.name=Large Peridot Shovel
+item.reignofmagic_gems_peridotAOEAxe.name=Large Peridot Axe
+item.reignofmagic_gems_peridotAOEDual.name=Large Peridot Dual Tool 
+
+item.reignofmagic_gems_sapphireAOEPick.name=Large Sapphire Pickaxe
+item.reignofmagic_gems_sapphireAOEShovel.name=Large Sapphire Shovel
+item.reignofmagic_gems_sapphireAOEAxe.name=Large Sapphire Axe
+item.reignofmagic_gems_sapphireAOEDual.name=Large Sapphire Dual Tool 
+
+item.reignofmagic_gems_rubyAOEPick.name=Large Ruby Pickaxe
+item.reignofmagic_gems_rubyAOEShovel.name=Large Ruby Shovel
+item.reignofmagic_gems_rubyAOEAxe.name=Large Ruby Axe
+item.reignofmagic_gems_rubyAOEDual.name=Large Ruby Dual Tool 
+
+item.reignofmagic_gems_emeraldAOEPick.name=Large Emerald Pickaxe
+item.reignofmagic_gems_emeraldAOEShovel.name=Large Emerald Shovel
+item.reignofmagic_gems_emeraldAOEAxe.name=Large Emerald Axe
+item.reignofmagic_gems_emeraldAOEDual.name=Large Emerald Dual Tool 
+
+item.reignofmagic_gems_amethystAOEPick.name=Large Amethyst Pickaxe
+item.reignofmagic_gems_amethystAOEShovel.name=Large Amethyst Shovel
+item.reignofmagic_gems_amethystAOEAxe.name=Large Amethyst Axe
+item.reignofmagic_gems_amethystAOEDual.name=Large Amethyst Dual Tool 
+
+item.reignofmagic_gems_jetAOEPick.name=Large Jet Pickaxe
+item.reignofmagic_gems_jetAOEShovel.name=Large Jet Shovel
+item.reignofmagic_gems_jetAOEAxe.name=Large Jet Axe
+item.reignofmagic_gems_jetAOEDual.name=Large Jet Dual Tool 
+
+
+item.reignofmagic_gems_Putty.name=Gem Putty
+item.reignofmagic_gems_PuttyCompact.name=Dense Gem Putty
 
 tile.reignofmagic_gems.oreTopaz.name=Topaz Ore
 tile.reignofmagic_gems.oreMalachite.name=Malachite Ore

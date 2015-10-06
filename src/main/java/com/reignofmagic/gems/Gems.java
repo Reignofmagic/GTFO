@@ -6,7 +6,8 @@ import com.reignofmagic.gems.init.GTFOtab;
 import com.reignofmagic.gems.init.ModBlocks;
 import com.reignofmagic.gems.init.ModItems;
 import com.reignofmagic.gems.init.ModRecipes;
-import com.reignofmagic.gems.init.onAnvilUpdate;
+import com.reignofmagic.gems.init.onAnvilUpdatePutty;
+import com.reignofmagic.gems.init.onAnvilUpdatePuttyCompact;
 import com.reignofmagic.gems.world.ReignWorldGen;
 
 import cpw.mods.fml.common.Mod;
@@ -19,6 +20,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
+
+
+// Many thanks to all those who have helped me make this mod a reality. 
+// People who contributed/helped/have Open sourced mods are fantastic here are their names
+// Hlaaftana, ljfa, GoldenApple, OreCruncher, Type1Ninja, Wuppy, Pahimar, XFactor, Boni, SatanicSanta, Tehnut
+// TitaniumMissle, Shadowfactsdev, and a few others who I can't remember.  
+
 
 @Mod(modid = Reference.MODID, version = Reference.VERSION, name = Reference.NAME)
 
@@ -33,7 +41,8 @@ public class Gems {
 		ModItems.LoadItems();
 		Dictionary.oreDictionary();
 		GameRegistry.registerWorldGenerator(handler, 0);
-		MinecraftForge.EVENT_BUS.register(new onAnvilUpdate());
+		MinecraftForge.EVENT_BUS.register(new onAnvilUpdatePutty());
+		MinecraftForge.EVENT_BUS.register(new onAnvilUpdatePuttyCompact());
 
 	}
 	

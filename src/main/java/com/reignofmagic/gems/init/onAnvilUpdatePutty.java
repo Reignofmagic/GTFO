@@ -14,7 +14,7 @@ import net.minecraftforge.event.AnvilUpdateEvent;
 // With a few Minor changes here and there. 
 
 
-public final class onAnvilUpdate {
+public final class onAnvilUpdatePutty {
 
 	public static int getItemDamage(final ItemStack stack) {
 		assert stack != null;
@@ -31,7 +31,7 @@ public final class onAnvilUpdate {
 	
 	private static final int RENAME_COST = 5;
 	private static final int[] EXPERIENCE_COST = { 20 };
-	private static final int[] REPAIR_AMOUNT_ = { 9110 };
+	private static final int[] REPAIR_AMOUNT_ = { 9200 };
 
 
 	private boolean isValidRepairItem(final ItemStack stack) {
@@ -73,9 +73,9 @@ public final class onAnvilUpdate {
 			int repairAmount = 0;
 
 			if (repairMaterial.getItem() == ModItems.gemPutty)
-				repairAmount = 9110;
+				repairAmount = 9200;
 			else
-				repairAmount = 9110;
+				repairAmount = 9200;
 
 			// Figure out the quantity needed to fully repair the item
 			final int itemDamage = getItemDamage(itemToRepair);
@@ -93,10 +93,10 @@ public final class onAnvilUpdate {
 		}
 	}
 
-	public onAnvilUpdate() {
+	public onAnvilUpdatePutty() {
 	}
 
 	public static void register() {
-		MinecraftForge.EVENT_BUS.register(new onAnvilUpdate());
+		MinecraftForge.EVENT_BUS.register(new onAnvilUpdatePutty());
 	}
 }

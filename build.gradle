@@ -19,7 +19,7 @@ apply plugin: 'forge'
 
 version = "1.7.10-1.0"
 group= "com.reignofmagic.gems" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Gems are Truly Fabulous and Outrageous"
+archivesBaseName = "Gems are Truly Fabulous and Outrageous "
 
 minecraft {
     version = "1.7.10-10.13.4.1448-1.7.10"

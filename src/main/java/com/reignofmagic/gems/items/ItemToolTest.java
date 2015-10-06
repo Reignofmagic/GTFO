@@ -1,21 +1,17 @@
 package com.reignofmagic.gems.items;
 
-import java.util.Set;
-
-import com.google.common.collect.ImmutableSet;
 import com.reignofmagic.gems.Gems;
-import com.reignofmagic.gems.init.AOEHarvest;
+import com.reignofmagic.gems.init.AOEHarvestDual;
 
-import net.minecraft.item.ItemPickaxe;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item.ToolMaterial;
 
-public class ItemToolTest extends AOEHarvest {
+public class ItemToolTest extends AOEHarvestDual {
 
 	public ItemToolTest(ToolMaterial material) {
-		super(material, 5, 5);
+		super(material, 1, 0);
 		setCreativeTab(Gems.GTFOtab);
-		this.setHarvestLevel("pickaxe", 10);
-		this.setHarvestLevel("Shovel", 10);
+		/*this.setHarvestLevel("pickaxe", 10);
+		this.setHarvestLevel("Shovel", 10);*/
 
 
 	}

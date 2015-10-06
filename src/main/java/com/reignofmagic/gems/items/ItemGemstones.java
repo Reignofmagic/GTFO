@@ -1,6 +1,7 @@
 package com.reignofmagic.gems.items;
 
 import java.util.List;
+
 import com.reignofmagic.gems.Gems;
 import com.reignofmagic.gems.helper.Reference;
 import cpw.mods.fml.relauncher.Side;
