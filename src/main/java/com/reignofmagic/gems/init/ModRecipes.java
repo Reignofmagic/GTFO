@@ -189,7 +189,7 @@ public class ModRecipes {
 				new ItemStack(ModItems.tanzaniteAOEShovel), 'Y', new ItemStack(ModItems.tanzaniteAOEPick), 'S', Items.stick);
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.tanzaniteAOEDual), "YYY", "YXY", "YYY", 'X',
-				new ItemStack(ModItems.topazAOEDual), 'Y', "blockTanzanite"));
+				new ItemStack(ModItems.amberAOEDual), 'Y', "blockTanzanite"));
 		
 		
 		//Tanzanite Armor

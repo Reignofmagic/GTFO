@@ -23,7 +23,7 @@ public class GemBlocks extends Block {
 	String name = "allGemBlocks";
 
 	Random random = new Random();
-	@SideOnly(Side.CLIENT)
+	
 	public IIcon[] icons = new IIcon[9];
 
 	public GemBlocks() {

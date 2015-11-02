@@ -27,7 +27,7 @@ public class GemOres extends Block {
 
 	Random random = new Random();
 	@SideOnly(Side.CLIENT)
-	public IIcon[] icons = new IIcon[9];
+	public IIcon[] icons; // = new IIcon[9]; -- Fixed Server Crash by moving this part to line 53
 
 	public GemOres() {
 		super(Material.rock);
@@ -50,6 +50,7 @@ public class GemOres extends Block {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister) {
+		icons = new IIcon[9];  // Added this line to fix server crash
 
 		this.icons[0] = iconRegister.registerIcon(Reference.MODID + ":" + "oreTopaz");
 		this.icons[1] = iconRegister.registerIcon(Reference.MODID + ":" + "oreMalachite");
