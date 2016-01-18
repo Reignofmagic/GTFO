@@ -8,8 +8,6 @@ import com.reignofmagic.gems.init.ModItems;
 import com.reignofmagic.gems.init.ModRecipes;
 import com.reignofmagic.gems.init.onAnvilUpdatePutty;
 import com.reignofmagic.gems.init.onAnvilUpdatePuttyCompact;
-import com.reignofmagic.gems.tile_entity.TileEntityTest;
-import com.reignofmagic.gems.tile_entity.TileEntityTestChest;
 import com.reignofmagic.gems.world.ReignWorldGen;
 
 import cpw.mods.fml.common.Mod;
@@ -50,7 +48,7 @@ public class Gems {
 		GameRegistry.registerWorldGenerator(handler, 0);
 		MinecraftForge.EVENT_BUS.register(new onAnvilUpdatePutty());
 		MinecraftForge.EVENT_BUS.register(new onAnvilUpdatePuttyCompact());
-		TileEntityTest.loadEntities();
+		
 		
 		proxy.registerRenderThings();
 	
